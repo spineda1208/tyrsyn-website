@@ -25,3 +25,20 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  
+  .home-icon {
+    @apply flex
+  }
+
+  .navbar-text {
+    @apply relative
+    mr-2 ml-2 my-auto
+  }
+
+  .navbar-button {
+    @apply flex
+  }
+  
+}
