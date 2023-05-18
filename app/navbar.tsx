@@ -4,38 +4,38 @@ import Image from 'next/image';
 
 const NavBar = () => {
     return (
-        <nav className='fixed top-0 h-16 w-screen m-0 flex flex-row bg-transparent border-2 border-green-600 shadow justify-between'>
+        <nav className='navbar'>
             <HomeIcon></HomeIcon>
-            {/* <div> */}
-                <NavBarText text='Link 1'></NavBarText>
-                <NavBarText text='Link 2'></NavBarText>
-                <NavBarText text='Link 3'></NavBarText>
-                <NavBarText text='Link 4'></NavBarText>
-            {/* </div> */}
-            <NavBarButton text='Contact Us'></NavBarButton>
+            <div className='flex'>
+                <NavText text='Link 1'></NavText>
+                <NavText text='Link 2'></NavText>
+                <NavText text='Link 3'></NavText>
+                <NavText text='Link 4'></NavText>
+            </div>
+            <NavButton text='Contact Us'></NavButton>
         </nav>
     )
 }
 
 const HomeIcon = () => {
     return (
-        <Link href='/' className='home-icon'>
+        <Link href='/' className='nav-icon'>
             <Image src='/tyrsyn.svg' height="200" width="200" alt='logo'></Image>
         </Link>
     )
 }
 
-const NavBarText = ({text = 'placeholder', page = '/'}) => {
+const NavText = ({text = 'placeholder', page = '/'}) => {
     return (
-        <Link href={page} className='navbar-text'>
+        <Link href={page} className='nav-text'>
             {text}
         </Link>
     )
 }
 
-const NavBarButton = ({text = 'placeholder', page = '/'}) => {
+const NavButton = ({text = 'placeholder', page = '/'}) => {
     return (
-        <Link href ={page} className='my-auto mr-4'>
+        <Link href ={page} className='nav-button'>
             {text}
         </Link>
     )

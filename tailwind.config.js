@@ -10,15 +10,43 @@ module.exports = {
   theme: {
     colors: {
       'orange': '#F15A24',
-      'purple': '#2E3192'
+      'purple': '#2E3192',
     },
+
+    // fontFamily: {
+
+    // },
+
     extend: {
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
+      backgroundSize: {
+        '150%': '150%',
+        '200%': '200%',
+        '250%': '250%',
+        '300%': '300%',
+        '350%': '350%',
+        '400%': '400%',
+      },
+
+      keyframes: {
+        'gradient': {
+          '0%': {background: 'bg-left'},
+          '100%': {background: 'bg-right'},
+        }
+      },
+
+      animation: {
+        'gradient': 'bg 0.5s infinite alternate'
+      },
+
     },
+
   },
 
   plugins: [],

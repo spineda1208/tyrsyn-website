@@ -6,6 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --tyr-gradient: linear-gradient(
+    45deg,
+    #2E3192,
+    #F15A24,
+    blue
+  );
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,29 +23,63 @@
   }
 }
 
+@layer base {
+  html {
+    /* font-family: ; */
+  }
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background-repeat: no-repeat;
+  background-image: linear-gradient(90deg ,orange, purple); */
+  /* padding-top: 64px; */
+  background-image: var(--tyr-gradient);
+  background-size: 400%;
+  padding-top: 64px;
+  animation: bg-animation 30s infinite alternate
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position:  right;
+  }
 }
 
 @layer components {
+
+  .navbar {
+    @apply fixed top-0 h-20 w-screen m-0 flex flex-row 
+    border-2 shadow
+  }
   
-  .home-icon {
+  .nav-icon {
     @apply flex
   }
 
-  .navbar-text {
-    @apply relative
-    mr-2 ml-2 my-auto
+  .nav-text {
+    @apply flex justify-center
+    my-auto mr-10 ml-10 
   }
 
-  .navbar-button {
-    @apply flex
+  .nav-button {
+    @apply flex justify-center items-center   
+    rounded-full w-32 h-14 border 
+    my-auto ms-auto mx-8
+    bg-gradient-to-r from-orange to-purple
+    bg-400%
+    hover:w-36
+    hover:animate-gradient
+    transition-all
   }
-  
+
+
 }
