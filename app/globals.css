@@ -23,12 +23,6 @@
   }
 }
 
-@layer base {
-  html {
-    /* font-family: ; */
-  }
-}
-
 html {
   height: 100%;
 }
