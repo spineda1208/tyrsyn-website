@@ -8,14 +8,9 @@ module.exports = {
   ],
 
   theme: {
-    colors: {
-      'orange': '#F15A24',
-      'purple': '#2E3192',
+    fontFamily: {
+      'roboto': [],
     },
-
-    // fontFamily: {
-
-    // },
 
     extend: {
 
@@ -32,17 +27,32 @@ module.exports = {
         '300%': '300%',
         '350%': '350%',
         '400%': '400%',
+        '450%': '450%',
+      },
+
+      margin: {
+        '6.5': '1.325rem',
       },
 
       keyframes: {
         'gradient': {
-          '0%': {background: 'bg-left'},
-          '100%': {background: 'bg-right'},
+          '0%': 'bg-left',
+          '100%': 'bg-right',
+        },
+        'expand': {
+          '0%': {},
+          '50%': {},
+          '100%': {}
         }
       },
 
       animation: {
-        'gradient': 'bg 0.5s infinite alternate'
+        'gradient': 'animate-gradient 5s infinite alternate'
+      },
+
+      colors: {
+        'orange': '#F15A24',
+        'purple': '#2E3192',
       },
 
     },

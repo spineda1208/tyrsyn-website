@@ -7,10 +7,10 @@ const NavBar = () => {
         <nav className='navbar'>
             <HomeIcon></HomeIcon>
             <div className='flex'>
-                <NavText text='Link 1'></NavText>
-                <NavText text='Link 2'></NavText>
-                <NavText text='Link 3'></NavText>
-                <NavText text='Link 4'></NavText>
+                <NavText text='Readers'></NavText>
+                <NavText text='Tags'></NavText>
+                <NavText text='Software'></NavText>
+                <NavText text='Solutions'></NavText>
             </div>
             <NavButton text='Contact Us'></NavButton>
         </nav>
@@ -20,16 +20,19 @@ const NavBar = () => {
 const HomeIcon = () => {
     return (
         <Link href='/' className='nav-icon'>
-            <Image src='/tyrsyn.svg' height="200" width="200" alt='logo'></Image>
+            <Image src='/tyrsyn.svg' height="80" width="80" alt='logo'></Image>
         </Link>
     )
 }
 
 const NavText = ({text = 'placeholder', page = '/'}) => {
     return (
+        <>
         <Link href={page} className='nav-text'>
             {text}
         </Link>
+        <span className='nav-dropdown'></span>
+        </>
     )
 }
 

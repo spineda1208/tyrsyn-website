@@ -12,7 +12,11 @@
     #F15A24,
     blue
   );
-
+  --bw-gradient: linear-gradient(
+    45deg,
+    black,
+    grey
+  )
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,9 +37,9 @@ body {
   /* background-repeat: no-repeat;
   background-image: linear-gradient(90deg ,orange, purple); */
   /* padding-top: 64px; */
-  background-image: var(--tyr-gradient);
+  background-image: var(--bw-gradient);
   background-size: 400%;
-  padding-top: 64px;
+  padding-top: 5rem;
   animation: bg-animation 30s infinite alternate
 }
 
@@ -52,28 +56,36 @@ body {
 
   .navbar {
     @apply fixed top-0 h-20 w-screen m-0 flex flex-row 
-    border-2 shadow
+
   }
   
   .nav-icon {
-    @apply flex
+    @apply text-center
+    ml-6
   }
 
   .nav-text {
     @apply flex justify-center
-    my-auto mr-10 ml-10 
+    my-auto mr-8 ml-8 
+    font-semibold text-base
   }
 
   .nav-button {
     @apply flex justify-center items-center   
-    rounded-full w-32 h-14 border 
+    rounded-full w-32 h-14 border shadow-2xl
     my-auto ms-auto mx-8
+    font-semibold text-base 
     bg-gradient-to-r from-orange to-purple
-    bg-400%
-    hover:w-36
-    hover:animate-gradient
-    transition-all
+    bg-400% bg-left
+    hover:bg-right
+    transition-all 
+    
   }
+
+  .nav-dropdown {
+    @apply flex
+  }
+
 
 
 }

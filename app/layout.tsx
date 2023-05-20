@@ -5,7 +5,6 @@ import NavBar from './navbar'
 const roboto = Roboto({ 
   weight: '400',
   subsets: ['cyrillic'],
-
 })
 
 export const metadata = {
@@ -25,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <NavBar/>
-        <main className=''>{children}</main>
+        <main className='bg-400% bg-gradient-to-r from-orange to-purple w-80 h-80 animate-gradient cursor-pointer'>{children}</main>
       </body>
     </html>
   )
