@@ -6,48 +6,57 @@ const NavBar = () => {
     return (
         <nav className='navbar'>
             <HomeIcon></HomeIcon>
-            <div className='flex'>
-                <NavText text='Readers'></NavText>
-                <NavText text='Tags'></NavText>
-                <NavText text='Software'></NavText>
-                <NavText text='Solutions'></NavText>
-            </div>
-            <NavButton text='Contact Us'></NavButton>
+            <DropdownMenu>
+                <MenuTitle title='Readers' page='/readers'>hello world!</MenuTitle>
+                <MenuTitle title='Tags' page='/tags'>bro</MenuTitle>
+                <MenuTitle title='Software' page='/software'>stop</MenuTitle>
+                <MenuTitle title='Solutions' page='/solutions'>playing</MenuTitle>
+            </DropdownMenu>
+            <GradButton text='Contact Us' page='/contactus'></GradButton>
         </nav>
     )
 }
 
 const HomeIcon = () => {
     return (
-        <Link href='/' className='nav-icon'>
+        <Link href='/' className='nav-homeicon'>
             <Image src='/tyrsyn.svg' height="80" width="80" alt='logo'></Image>
         </Link>
     )
 }
 
-const NavText = ({text = 'placeholder', page = '/'}) => {
+const DropdownMenu = ({ children }: {children: any}) => {
     return (
         <>
-        <Link href={page} className='nav-text'>
-            {text}
-        </Link>
-        <span className='nav-dropdown'></span>
+        <div>
+            <span className='absolute w-20px h-20px block bg-white -translate-y-1/2 rotate-45'></span>
+        </div>
+        <ul className='flex'>
+            {children}
+        </ul>
         </>
     )
 }
 
-const NavButton = ({text = 'placeholder', page = '/'}) => {
+const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any, title: string, page: string}) => {
     return (
-        <Link href ={page} className='nav-button'>
+        <>
+        <Link href={page} className='nav-menutitle group'>{title}</Link>
+        <span className='nav-dropdown group-hover:block:opacity-100'>
+            {children}
+        </span>
+        </>
+    )
+}
+
+const GradButton = ({text = 'placeholder', page = '/'}: {text: string, page:string}) => {
+    return (
+        <Link href ={page} className='nav-gradbutton'>
             {text}
         </Link>
     )
 }
 
-const MenuOption = () => {
-    return (
-        <></>
-    )
-}
+
 
 export default NavBar

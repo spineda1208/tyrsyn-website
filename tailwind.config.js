@@ -36,18 +36,23 @@ module.exports = {
 
       keyframes: {
         'gradient': {
-          '0%': 'bg-left',
-          '100%': 'bg-right',
+          '0%': {'background-position': 'left'},
+          // '50%': {'background-position': '100% 50%'},
+          '100%': {'background-position': 'right'},
         },
         'expand': {
           '0%': {},
           '50%': {},
           '100%': {}
+        },
+        'shift': {
+          '0%': {},
+          '100%': {}
         }
       },
 
       animation: {
-        'gradient': 'animate-gradient 5s infinite alternate'
+        'gradient': 'gradient 4s infinite alternate backwards'
       },
 
       colors: {

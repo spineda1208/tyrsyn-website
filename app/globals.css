@@ -36,11 +36,9 @@ body {
   color: rgb(var(--foreground-rgb));
   /* background-repeat: no-repeat;
   background-image: linear-gradient(90deg ,orange, purple); */
-  /* padding-top: 64px; */
   background-image: var(--bw-gradient);
   background-size: 400%;
   padding-top: 5rem;
-  animation: bg-animation 30s infinite alternate
 }
 
 @keyframes bg-animation {
@@ -56,34 +54,34 @@ body {
 
   .navbar {
     @apply fixed top-0 h-20 w-screen m-0 flex flex-row 
-
   }
   
-  .nav-icon {
+  .nav-homeicon {
     @apply text-center
     ml-6
   }
 
-  .nav-text {
+  .nav-menutitle {
     @apply flex justify-center
     my-auto mr-8 ml-8 
-    font-semibold text-base
+    text-base font-semibold
   }
 
-  .nav-button {
+  .nav-gradbutton {
     @apply flex justify-center items-center   
     rounded-full w-32 h-14 border shadow-2xl
     my-auto ms-auto mx-8
     font-semibold text-base 
     bg-gradient-to-r from-orange to-purple
-    bg-400% bg-left
-    hover:bg-right
-    transition-all 
-    
+    bg-400% 
+    animate-gradient
   }
 
   .nav-dropdown {
-    @apply flex
+    @apply absolute hidden
+    p-20 -top-20 rounded-3xl translate-y-24
+    opacity-0 overflow-hidden 
+    transition-all
   }
 
 

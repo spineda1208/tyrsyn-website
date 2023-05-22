@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <NavBar/>
-        <main className='bg-400% bg-gradient-to-r from-orange to-purple w-80 h-80 animate-gradient cursor-pointer'>{children}</main>
+        <main className=''>{children}</main>
       </body>
     </html>
   )
