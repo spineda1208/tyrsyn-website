@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  
+
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -40,19 +40,16 @@ module.exports = {
           // '50%': {'background-position': '100% 50%'},
           '100%': {'background-position': 'right'},
         },
-        'expand': {
-          '0%': {},
-          '50%': {},
-          '100%': {}
-        },
-        'shift': {
-          '0%': {},
-          '100%': {}
+        'spin-gradient': {
+          '0%': {'--gradient-angle': '0deg'},
+          '100%': {'--gradient-angle': '360deg'}
         }
       },
 
       animation: {
-        'gradient': 'gradient 4s infinite alternate backwards'
+        'gradient': 'gradient 4s infinite alternate',
+        'gradient-fast': 'gradient 2s infinite alternate',
+        'gradient-spin': 'spin-gradient 5s infinite'
       },
 
       colors: {

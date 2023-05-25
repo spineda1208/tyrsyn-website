@@ -27,6 +27,17 @@
   }
 }
 
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% { --gradient-angle: 0deg}
+  100% { --gradient-angle: 360deg}
+}
+
 html {
   height: 100%;
 }
@@ -41,49 +52,82 @@ body {
   padding-top: 5rem;
 }
 
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position:  right;
-  }
-}
-
 @layer components {
 
   .navbar {
-    @apply fixed top-0 h-20 w-screen m-0 flex flex-row 
+    @apply fixed top-0 h-20 w-screen m-0 flex flex-col sm:flex-row 
   }
   
+
   .nav-homeicon {
     @apply text-center
-    ml-6
+    ml-10 mr-6
   }
+
 
   .nav-menutitle {
-    @apply flex justify-center
-    my-auto mr-8 ml-8 
-    text-base font-semibold
+    @apply relative justify-center tracking-[0.075em]
+    my-auto mr-8 ml-8 h-6
+    text-[1.2rem] font-semibold
+    transition-all
   }
-
-  .nav-gradbutton {
-    @apply flex justify-center items-center   
-    rounded-full w-32 h-14 border shadow-2xl
-    my-auto ms-auto mx-8
-    font-semibold text-base 
+  .nav-menutitle::before,
+  .nav-menutitle::after {
+    @apply absolute content-['']
+    rounded w-[0%] h-[2px] left-0 -bottom-[10px]
     bg-gradient-to-r from-orange to-purple
-    bg-400% 
+    bg-400%
+  }
+  .nav-menutitle:hover::before,
+  .nav-menutitle:hover::after {
+    @apply w-[100%] duration-300 animate-gradient-fast
+  }
+  .nav-menutitle::before {
+    @apply blur-lg h-[8px]
+  }
+  
+
+  .nav-gradientbutton {
+    @apply flex justify-center items-center
+    rounded-full w-[8.5rem] h-14 border shadow-2xl
+    my-auto ms-auto mx-8
+    font-semibold text-lg tracking-wide
+    bg-gradient-to-r from-orange to-purple
+    bg-400%
+    hover:w-[9rem]
+    transition-all
     animate-gradient
   }
 
+
   .nav-dropdown {
-    @apply absolute hidden
-    p-20 -top-20 rounded-3xl translate-y-24
-    opacity-0 overflow-hidden 
+    @apply absolute hidden justify-center
+    p-8 top-12 rounded
+    bg-black
     transition-all
   }
+  .nav-dropdown:hover {
+    @apply block
+  }
+  .nav-dropdown::before,
+  .navbar-dropdown::after {
+    @apply absolute content-['']
+    rounded inset-[-0.1rem] z-[-1]
+    bg-gradient-conic from-purple via-orange to-purple
+  }
+  .nav-dropdown::after {
+    @apply blur-lg
+  }
 
+}
 
-
+.nav-dropdown::before,
+.nav-dropdown::after {
+  background: conic-gradient(
+    from var(--gradient-angle),
+    #2E3192,
+    #F15A24,
+    #2E3192
+  ) ;
+  animation: rotation 2s linear infinite
 }

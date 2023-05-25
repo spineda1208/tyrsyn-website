@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <NavBar/>
-        <main className=''>{children}</main>
+        <main className='justify-center items-center'>{children}</main>
       </body>
     </html>
   )
