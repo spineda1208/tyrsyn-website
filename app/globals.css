@@ -71,10 +71,11 @@ body {
     text-[1.2rem] font-semibold
     transition-all
   }
+
   .nav-menutitle::before,
   .nav-menutitle::after {
     @apply absolute content-['']
-    rounded w-[0%] h-[2px] left-0 -bottom-[10px]
+    rounded w-[0%] h-[2px] left-0 -bottom-[8px]
     bg-gradient-to-r from-orange to-purple
     bg-400%
   }
@@ -82,27 +83,11 @@ body {
   .nav-menutitle:hover::after {
     @apply w-[100%] duration-300 animate-gradient-fast
   }
-  .nav-menutitle::before {
-    @apply blur-lg h-[8px]
-  }
   
-
-  .nav-gradientbutton {
-    @apply flex justify-center items-center
-    rounded-full w-[8.5rem] h-14 border shadow-2xl
-    my-auto ms-auto mx-8
-    font-semibold text-lg tracking-wide
-    bg-gradient-to-r from-orange to-purple
-    bg-400%
-    hover:w-[9rem]
-    transition-all
-    animate-gradient
-  }
-
-
+  
   .nav-dropdown {
     @apply absolute hidden justify-center
-    p-8 top-12 rounded
+    p-8 top-11 rounded
     bg-black
     transition-all
   }
@@ -115,8 +100,17 @@ body {
     rounded inset-[-0.1rem] z-[-1]
     bg-gradient-conic from-purple via-orange to-purple
   }
-  .nav-dropdown::after {
-    @apply blur-lg
+  
+  .nav-gradientbutton {
+    @apply flex justify-center items-center
+    rounded-full w-[8.5rem] h-14 border shadow-2xl
+    my-auto ms-auto mx-8
+    font-semibold text-lg tracking-wide
+    bg-gradient-to-r from-orange to-purple
+    bg-400%
+    hover:w-[9rem]
+    transition-all
+    animate-gradient
   }
 
 }

@@ -25,21 +25,6 @@ const HomeIcon = () => {
     )
 }
 
-// WIP
-// const DropdownMenu = ({ children }: {children: any}) => {
-//     return (
-//         <>
-//         <div className='nav-dropdown-block group-hover:h-28'>
-//             <span className='nav-dropdown-arrow'></span>
-//         </div>
-
-//         <ul className='nav-dropdown'>
-//             {children}
-//         </ul>
-//         </>
-//     )
-// }
-
 const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any, title: string, page: string}) => {
     return (
         <>
@@ -49,7 +34,6 @@ const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any
                 {children}
             </span>
         </Link>
-        
         </>
     )
 }
