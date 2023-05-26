@@ -49,26 +49,26 @@ body {
   background-image: linear-gradient(90deg ,orange, purple); */
   background-image: var(--bw-gradient);
   background-size: 400%;
-  padding-top: 5rem;
+  padding-top: 20px;
 }
 
 @layer components {
 
   .navbar {
-    @apply fixed top-0 h-20 w-screen m-0 flex flex-col sm:flex-row 
+    @apply fixed top-0 h-[80px] w-screen m-0 flex flex-col sm:flex-row 
   }
   
 
   .nav-homeicon {
     @apply text-center
-    ml-10 mr-6
+    ml-[40px] mr-[24px]
   }
 
 
   .nav-menutitle {
     @apply relative justify-center tracking-[0.075em]
     my-auto mr-8 ml-8 h-6
-    text-[1.2rem] font-semibold
+    text-[19.2px] font-semibold
     transition-all
   }
 
@@ -88,25 +88,25 @@ body {
 
   .nav-dropdown {
     @apply absolute hidden justify-center
-    p-8 top-11 rounded
+    p-[32px] top-[44px] rounded
     bg-black
     transition-all 
   }
   .nav-dropdown::before,
   .navbar-dropdown::after {
     @apply absolute content-['']
-    rounded inset-[-0.1rem] z-[-1]
+    rounded inset-[-1.6px] z-[-1]
   }
   
   
   .nav-gradientbutton {
     @apply flex justify-center items-center
-    rounded-full w-[8.5rem] h-14 border shadow-2xl
-    my-auto ms-auto mx-8
+    rounded-full w-[136px] h-[56px] border shadow-2xl
+    my-auto ms-auto mx-[32px]
     font-semibold text-lg tracking-wide
     bg-gradient-to-r from-orange to-purple
     bg-400%
-    hover:w-[9rem]
+    hover:w-[144px]
     transition-all
     animate-gradient
   }
@@ -129,5 +129,4 @@ body {
 }
 .nav-dropdown::after {
   filter: blur(4rem);
-  inset: -0.2rem;
 }

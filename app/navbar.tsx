@@ -7,7 +7,9 @@ const NavBar = () => {
         <nav className='navbar'>
             <HomeIcon></HomeIcon>
             <MenuTitle title='Readers' page='/readers'>
-                <Image src='/tyrsyn.svg' height="80" width="80" alt='logo'></Image>
+                <div className='w-[256px] h-[200px]'>
+                    <Image src='/tyrsyn.svg' height="200" width="200" alt='logo'></Image>
+                </div>
             </MenuTitle>
             <MenuTitle title='Tags' page='/tags'>content</MenuTitle>
             <MenuTitle title='Software' page='/software'>more content</MenuTitle>
