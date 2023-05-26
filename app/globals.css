@@ -72,34 +72,32 @@ body {
     transition-all
   }
 
-  .nav-menutitle::before,
-  .nav-menutitle::after {
+  .nav-menutitle::before {
     @apply absolute content-['']
     rounded w-[0%] h-[2px] left-0 -bottom-[8px]
     bg-gradient-to-r from-orange to-purple
     bg-400%
   }
-  .nav-menutitle:hover::before,
-  .nav-menutitle:hover::after {
-    @apply w-[100%] duration-300 animate-gradient-fast
+  .nav-menutitle:hover::before {
+    @apply w-[100%] duration-[425ms] animate-gradient-fast
   }
   
-  
+  .nav-bridge {
+    @apply w-[100%] h-[18px] bg-transparent content-['']
+  }
+
   .nav-dropdown {
     @apply absolute hidden justify-center
     p-8 top-11 rounded
     bg-black
-    transition-all
-  }
-  .nav-dropdown:hover {
-    @apply block
+    transition-all 
   }
   .nav-dropdown::before,
   .navbar-dropdown::after {
     @apply absolute content-['']
     rounded inset-[-0.1rem] z-[-1]
-    bg-gradient-conic from-purple via-orange to-purple
   }
+  
   
   .nav-gradientbutton {
     @apply flex justify-center items-center
@@ -115,6 +113,10 @@ body {
 
 }
 
+/* .nav-menutitle:hover .nav-dropdown {
+  display: block;
+} */
+
 .nav-dropdown::before,
 .nav-dropdown::after {
   background: conic-gradient(
@@ -123,5 +125,9 @@ body {
     #F15A24,
     #2E3192
   ) ;
-  animation: rotation 2s linear infinite
+  animation: rotation 4s linear infinite
+}
+.nav-dropdown::after {
+  filter: blur(4rem);
+  inset: -0.2rem;
 }
