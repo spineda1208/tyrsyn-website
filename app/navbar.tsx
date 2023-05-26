@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {MdBarcodeReader} from 'react-icons/md';
 import {} from 'react-icons/io';
+import { ReactComponentElement } from 'react';
+import { IconType } from 'react-icons';
 // import {} from '';
 
 const NavBar = () => {
@@ -9,11 +11,10 @@ const NavBar = () => {
         <nav className='navbar'>
             <HomeIcon></HomeIcon>
             <MenuTitle title='Readers' page='/readers'>
-                <div className='grid grid-cols-3 w-44'>
-                    {/* <Image src='/tyrsyn.svg' height="200" width="200" alt='logo'></Image> */}
-                    <MdBarcodeReader></MdBarcodeReader>
-
-
+                <div className='nav-menu-option-wrapper'>
+                    <MenuOption icon={<MdBarcodeReader size="80" />}>Handhelds</MenuOption>
+                    <MenuOption icon={<MdBarcodeReader />}>Integrated Readers</MenuOption>
+                    <MenuOption icon={<MdBarcodeReader />}>Multi-antenna</MenuOption>
                 </div>
             </MenuTitle>
             <MenuTitle title='Tags' page='/tags'>content</MenuTitle>
@@ -35,7 +36,7 @@ const HomeIcon = () => {
 const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any, title: string, page: string}) => {
     return (
         <>
-        <Link href={page} className='nav-menutitle hover:text-slate-400 group'>
+        <Link href={page} className='nav-menu-title hover:text-slate-300 group'>
             {title}
             <div className='nav-bridge'></div>
             <div className='nav-dropdown-wrapper group-hover:opacity-100'>
@@ -45,6 +46,17 @@ const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any
             </div>
         </Link>
         </>
+    )
+}
+
+const MenuOption = ({children, icon}:{children: string, icon: any}) =>{
+    return (
+        <div className='nav-menu-option group'>
+            { children }
+            <div className='large-icon group-hover:'>
+                { icon }
+            </div>
+        </div>
     )
 }
 
