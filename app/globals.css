@@ -83,7 +83,7 @@ body {
   }
   
   .nav-bridge {
-    @apply w-[100%] h-[18px] bg-transparent content-['']
+    @apply w-[100%] h-[16px] bg-transparent content-['']
   }
 
   .nav-dropdown-wrapper {
@@ -93,7 +93,7 @@ body {
 
   .nav-dropdown {
     @apply absolute block justify-center 
-    p-[32px] top-[44px] rounded
+     top-[44px] rounded
     bg-black min-h-[0]
     transition-all duration-500 invisible
   }
@@ -117,9 +117,8 @@ body {
     animate-gradient
   }
   .nav-gradientbutton:hover {
-    @apply bg-200% animate-gradient-fast
+    @apply bg-350%
   }
-
 }
 
 .nav-dropdown::before,
