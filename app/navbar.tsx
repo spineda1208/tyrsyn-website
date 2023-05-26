@@ -33,9 +33,11 @@ const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any
         <Link href={page} className='nav-menutitle group'>
             {title}
             <div className='nav-bridge'></div>
-            <span className='nav-dropdown group-hover:block'>
-                {children}
-            </span>
+            <div className='nav-dropdown-wrapper group-hover:opacity-100'>
+                <span className='nav-dropdown group-hover:visible'>
+                    {children}
+                </span>
+            </div>
         </Link>
         </>
     )

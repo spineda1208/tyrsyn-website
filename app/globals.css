@@ -45,11 +45,9 @@ html {
 body {
   height: 100%;
   color: rgb(var(--foreground-rgb));
-  /* background-repeat: no-repeat;
-  background-image: linear-gradient(90deg ,orange, purple); */
   background-image: var(--bw-gradient);
   background-size: 400%;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
 @layer components {
@@ -59,10 +57,12 @@ body {
   }
   
 
+
   .nav-homeicon {
     @apply text-center
     ml-[40px] mr-[24px]
   }
+
 
 
   .nav-menutitle {
@@ -86,11 +86,16 @@ body {
     @apply w-[100%] h-[18px] bg-transparent content-['']
   }
 
+  .nav-dropdown-wrapper {
+    @apply opacity-0
+    transition-all duration-500
+  }
+
   .nav-dropdown {
-    @apply absolute hidden justify-center
+    @apply absolute block justify-center 
     p-[32px] top-[44px] rounded
-    bg-black
-    transition-all 
+    bg-black min-h-[0]
+    transition-all duration-500 invisible
   }
   .nav-dropdown::before,
   .navbar-dropdown::after {
@@ -99,6 +104,7 @@ body {
   }
   
   
+
   .nav-gradientbutton {
     @apply flex justify-center items-center
     rounded-full w-[136px] h-[56px] border shadow-2xl
@@ -110,12 +116,11 @@ body {
     transition-all
     animate-gradient
   }
+  .nav-gradientbutton:hover {
+    @apply bg-200% animate-gradient-fast
+  }
 
 }
-
-/* .nav-menutitle:hover .nav-dropdown {
-  display: block;
-} */
 
 .nav-dropdown::before,
 .nav-dropdown::after {
@@ -126,7 +131,4 @@ body {
     #2E3192
   ) ;
   animation: rotation 4s linear infinite
-}
-.nav-dropdown::after {
-  filter: blur(4rem);
 }

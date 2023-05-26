@@ -21,6 +21,8 @@ module.exports = {
       },
 
       backgroundSize: {
+        '50%': '50%',
+        '100%': '100%',
         '150%': '150%',
         '200%': '200%',
         '250%': '250%',
@@ -32,6 +34,10 @@ module.exports = {
 
       margin: {
         '6.5': '1.325rem',
+      },
+
+      transitionProperty: {
+        'grid-rows': 'grid-template-rows',
       },
 
       keyframes: {
@@ -49,7 +55,7 @@ module.exports = {
       animation: {
         'gradient': 'gradient 4s infinite alternate',
         'gradient-fast': 'gradient 2s infinite alternate',
-        'gradient-spin': 'spin-gradient 5s infinite'
+        'gradient-faster': 'gradient 1.5s infinite alternate',
       },
 
       colors: {
