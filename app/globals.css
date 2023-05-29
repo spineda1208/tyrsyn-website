@@ -55,6 +55,7 @@ body {
 
   .navbar {
     @apply fixed top-0 h-[64px] w-screen m-0 flex flex-col sm:flex-row
+    z-10
   }
   
 
@@ -84,14 +85,14 @@ body {
   }
   
   .nav-bridge {
-    @apply w-[100%] h-[14px] bg-transparent content-['']
+    @apply w-[100%] h-[10px] bg-transparent content-['']
   }
 
   .nav-dropdown {
     @apply absolute block justify-center 
     p-6 top-[40px] rounded
     bg-black min-h-[0]
-    transition-all duration-500 invisible
+    transition-all duration-[400ms] invisible
   }
   .nav-dropdown::before,
   .navbar-dropdown::after {
@@ -127,7 +128,7 @@ body {
     font-semibold tracking-wide text-[17.5px]
     bg-gradient-to-r from-orange to-purple
     bg-400%
-    hover:w-[136px]
+    hover:w-[140px]
     transition-all
     animate-gradient
   }
@@ -135,6 +136,12 @@ body {
     @apply bg-350%
   }
   
+
+  section {
+    @apply relative flex flex-col items-center 
+    p-24
+  }
+
 }
 
 .nav-dropdown::before,

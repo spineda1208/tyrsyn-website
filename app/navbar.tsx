@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import {MdBarcodeReader} from 'react-icons/md';
-import {} from 'react-icons/io';
+import {HiOutlineTag} from 'react-icons/hi';
 import { ReactComponentElement } from 'react';
 import { IconType } from 'react-icons';
 // import {} from '';
@@ -12,20 +11,20 @@ const NavBar = () => {
             <HomeIcon></HomeIcon>
             <MenuTitle title='Readers' page='/readers'>
                 <div className='nav-menu-option-wrapper'>
-                    <MenuOption icon={<img src="icons/handheld.svg" className='large-icon'/>}>Handhelds</MenuOption>
-                    <MenuOption icon={<img src="icons/reader-antenna.svg" alt="an svg" className='large-icon'/>}>Integrated</MenuOption>
-                    <MenuOption icon={<img src="icons/multi-antenna.svg" alt="an svg" className='large-icon'/>}>Multi-antenna</MenuOption>
+                    <MenuOption icon={<img src="icons/handheld.svg" alt="handheld RFID reader icon" className='large-icon'/>}>Handhelds</MenuOption>
+                    <MenuOption icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
+                    <MenuOption icon={<img src="icons/multi-antenna.svg" alt="RFID multi-antenna reader icon" className='large-icon'/>}>Multi-antenna</MenuOption>
                 </div>
             </MenuTitle>
             <MenuTitle title='Tags' page='/tags'>
                 <div className='nav-menu-option-wrapper'>
-                    <MenuOption icon={<img src="icons/handheld.svg" className='large-icon'/>}>Labels</MenuOption>
-                    <MenuOption icon={<img src="icons/reader-antenna.svg" alt="an svg" className='large-icon'/>}>Anti-Theft</MenuOption>
-                    <MenuOption icon={<img src="icons/multi-antenna.svg" alt="an svg" className='large-icon'/>}>Specialty</MenuOption>
+                    <MenuOption icon={<img src="icons/label.svg" alt="an svg" className='large-icon'/>}>Labels</MenuOption>
+                    <MenuOption icon={<img src="icons/anti-theft.svg" alt="an svg" className='large-icon'/>}>Anti-Theft</MenuOption>
+                    <MenuOption icon={<img src="icons/specialty-tag.svg" alt="an svg" className='large-icon'/>}>Specialty</MenuOption>
                 </div>
             </MenuTitle>
-            <MenuTitle title='Software' page='/software'>more content</MenuTitle>
-            <MenuTitle title='Solutions' page='/solutions'>even more content</MenuTitle>
+            <MenuTitle title='Software' page='/software'>Offerings</MenuTitle>
+            <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle>
             <GradientButton text='Contact Us' page='/contactus'></GradientButton>
         </nav>
     )
