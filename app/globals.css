@@ -45,36 +45,37 @@ html {
 body {
   height: 100%;
   color: rgb(var(--foreground-rgb));
-  background-image: var(--bw-gradient);
+  background: rgb(9, 9, 9);
   background-size: 400%;
+  /* background-repeat: no-repeat; */
   padding-top: 80px;
 }
 
 @layer components {
 
   .navbar {
-    @apply fixed top-0 h-[80px] w-screen m-0 flex flex-col sm:flex-row 
+    @apply fixed top-0 h-[64px] w-screen m-0 flex flex-col sm:flex-row
   }
   
 
 
   .nav-homeicon {
     @apply text-center shrink-0
-    ml-[40px] mr-[24px]
+    ml-[32px] mr-[20px]
   }
 
 
 
   .nav-menu-title {
     @apply relative justify-center tracking-[0.075em]
-    my-auto mr-8 ml-8 h-6
-    text-[19.2px] font-semibold
+    my-auto mr-6 ml-6 h-7
+    text-[18px] font-semibold
     transition-all
   }
 
   .nav-menu-title::before {
     @apply absolute content-['']
-    rounded w-[0%] h-[2px] left-0 -bottom-[8px]
+    rounded w-[0%] h-[2px] left-0 -bottom-[2.5px]
     bg-gradient-to-r from-orange to-purple
     bg-400%
   }
@@ -88,7 +89,7 @@ body {
 
   .nav-dropdown {
     @apply absolute block justify-center 
-    p-6 top-[44px] rounded
+    p-6 top-[40px] rounded
     bg-black min-h-[0]
     transition-all duration-500 invisible
   }
@@ -103,31 +104,37 @@ body {
   }
 
   .nav-menu-option {
-    @apply flex flex-col w-[200px] h-40
+    @apply flex flex-col w-32 h-28
+    text-[14px]
+    transition-all
   }
   .nav-menu-option-wrapper {
-    @apply flex items-center justify-center text-center gap-6
+    @apply flex items-center justify-center text-center gap-4
   }
   
   .large-icon {
+    @apply w-20
+  }
+  .large-icon-wrapper {
     @apply relative flex items-center justify-center 
     mx-auto my-auto
   }
 
   .nav-gradientbutton {
     @apply flex justify-center items-center shrink-0
-    rounded-full w-[136px] h-[56px] border shadow-2xl
+    rounded-full w-[128px] h-[50px] border shadow-2xl
     my-auto ms-auto mx-[32px]
-    font-semibold text-lg tracking-wide
+    font-semibold tracking-wide text-[17.5px]
     bg-gradient-to-r from-orange to-purple
     bg-400%
-    hover:w-[144px]
+    hover:w-[136px]
     transition-all
     animate-gradient
   }
   .nav-gradientbutton:hover {
     @apply bg-350%
   }
+  
 }
 
 .nav-dropdown::before,

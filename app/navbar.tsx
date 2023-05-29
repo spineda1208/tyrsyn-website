@@ -12,12 +12,18 @@ const NavBar = () => {
             <HomeIcon></HomeIcon>
             <MenuTitle title='Readers' page='/readers'>
                 <div className='nav-menu-option-wrapper'>
-                    <MenuOption icon={<MdBarcodeReader size="80" />}>Handhelds</MenuOption>
-                    <MenuOption icon={<MdBarcodeReader />}>Integrated Readers</MenuOption>
-                    <MenuOption icon={<MdBarcodeReader />}>Multi-antenna</MenuOption>
+                    <MenuOption icon={<img src="icons/handheld.svg" className='large-icon'/>}>Handhelds</MenuOption>
+                    <MenuOption icon={<img src="icons/reader-antenna.svg" alt="an svg" className='large-icon'/>}>Integrated</MenuOption>
+                    <MenuOption icon={<img src="icons/multi-antenna.svg" alt="an svg" className='large-icon'/>}>Multi-antenna</MenuOption>
                 </div>
             </MenuTitle>
-            <MenuTitle title='Tags' page='/tags'>content</MenuTitle>
+            <MenuTitle title='Tags' page='/tags'>
+                <div className='nav-menu-option-wrapper'>
+                    <MenuOption icon={<img src="icons/handheld.svg" className='large-icon'/>}>Labels</MenuOption>
+                    <MenuOption icon={<img src="icons/reader-antenna.svg" alt="an svg" className='large-icon'/>}>Anti-Theft</MenuOption>
+                    <MenuOption icon={<img src="icons/multi-antenna.svg" alt="an svg" className='large-icon'/>}>Specialty</MenuOption>
+                </div>
+            </MenuTitle>
             <MenuTitle title='Software' page='/software'>more content</MenuTitle>
             <MenuTitle title='Solutions' page='/solutions'>even more content</MenuTitle>
             <GradientButton text='Contact Us' page='/contactus'></GradientButton>
@@ -28,7 +34,7 @@ const NavBar = () => {
 const HomeIcon = () => {
     return (
         <Link href='/' className='nav-homeicon'>
-            <Image src='logos/tyrsyn.svg' height="80" width="80" alt='logo'></Image>
+            <Image src='logos/tyrsyn.svg' height="64" width="64" alt='logo'></Image>
         </Link>
     )
 }
@@ -51,9 +57,9 @@ const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any
 
 const MenuOption = ({children, icon}:{children: string, icon: any}) =>{
     return (
-        <div className='nav-menu-option group'>
+        <div className='nav-menu-option group hover:text-slate-500'>
             { children }
-            <div className='large-icon group-hover:'>
+            <div className='large-icon-wrapper group-hover:fill-slate-500'>
                 { icon }
             </div>
         </div>
