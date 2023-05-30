@@ -57,7 +57,7 @@ export const HomeIcon = () => {
 const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any, title: string, page: string}) => {
     return (
         <>
-        <Link href={page} className='nav-menu-title hover:text-slate-300 group'>
+        <Link href={page} className='nav-menu-title hover:text-slate-400 group'>
             {title}
             <div className='nav-bridge'></div>
             <div className='nav-dropdown-wrapper group-hover:opacity-100'>

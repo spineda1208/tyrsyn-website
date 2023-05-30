@@ -6,17 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --tyr-gradient: linear-gradient(
-    45deg,
-    #2E3192,
-    #F15A24,
-    blue
-  );
-  --bw-gradient: linear-gradient(
-    45deg,
-    black,
-    grey
-  )
+  --tyr-blue: 238, 52%, 38%;
+  --tyr-blue-100: 238, 52%, 30%;
+  --syn-orange: 16, 88%, 54%;
+  --syn-orange-100: 16, 88%, 40%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,24 +37,43 @@
   font: inherit;
 }
 
+html, 
+body {
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-html, 
-body {
-  height: 100%;
- }
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(9, 9, 9);
+  background: black;
   background-size: 400%;
   padding-top: 80px;
 }
 
 section {
   overflow: hidden;
+}
+
+.custom-shape-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+.custom-shape-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 400px;
+}
+.custom-shape-top .shape-fill {
+  fill: black;
 }
 
 @layer components {
@@ -80,7 +92,7 @@ section {
   .navbar-titles[data-visible] {
     @apply absolute grid text-center
     top-28 bottom-20 left-0 gap-8 p-4 h-[14.8rem] min-h-[0]
-    bg-slate-900 rounded-lg
+    bg-slate-950 rounded-lg
   }
   .nav-toggle {
     @apply md:hidden
@@ -112,7 +124,7 @@ section {
   }
   
   .nav-bridge {
-    @apply w-[100%] h-[10px] bg-transparent content-['']
+    @apply w-[100%] h-[12px] bg-transparent content-['']
   }
 
   .nav-dropdown {
@@ -164,13 +176,13 @@ section {
   }
 
 
-  /* Hero */
+  /* Hero & Homepage */
   .container {
     @apply w-screen p-24 ms-auto me-auto
   }
 
   .even-columns {
-    @apply grid grid-flow-col auto-cols-fr
+    @apply grid md:grid-flow-col auto-cols-fr
     gap-4
   }
 
@@ -178,7 +190,8 @@ section {
     @apply flex justify-center items-center shrink-0
     rounded-3xl w-[128px] h-[44px] border shadow-2xl
     font-semibold tracking-wide text-[17.5px]
-    bg-400%
+    transition-all
+    hover:bg-slate-800
   }
   .nav-gradientbutton:hover {
     @apply bg-350%
@@ -186,11 +199,21 @@ section {
 
   /* Footer */
   footer {
-    @apply flex flex-col w-screen
+    @apply grid md:grid-flow-col auto-cols-fr
+    w-screen bottom-0
+    p-20 gap-10
   }
 
   .footer-nav {
     @apply grid
+  }
+  .footer-nav a {
+    @apply text-slate-700 text-lg
+    transition-all duration-75
+  }
+  .footer-nav a:hover, 
+  .footer-nav a:focus {
+    @apply text-slate-300 text-lg
   }
 
 }
@@ -215,7 +238,3 @@ section {
   white-space: nowrap;
   width: 1px;
 }
-
-/* absolute font-bold text-3xl justify-around 
-min-h-[200px] left-44 */
-/* relative flex flex-col items-center p-2 */

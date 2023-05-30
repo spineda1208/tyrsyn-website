@@ -4,7 +4,7 @@ import NavBar from './navbar'
 import PageFooter from './footer'
 
 const roboto = Roboto({
-  weight: '400',
+  weight: ['400', '700', '900'],
   subsets: ['cyrillic'],
 })
 
