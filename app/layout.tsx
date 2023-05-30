@@ -3,7 +3,7 @@ import { Roboto } from 'next/font/google'
 import NavBar from './navbar'
 import PageFooter from './footer'
 
-const roboto = Roboto({ 
+const roboto = Roboto({
   weight: '400',
   subsets: ['cyrillic'],
 })

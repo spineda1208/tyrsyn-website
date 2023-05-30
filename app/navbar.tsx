@@ -1,30 +1,48 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
+import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-// import {} from '';
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 const NavBar = () => {
+
+    const navRef = useRef<HTMLElement>(null);
+
+    const navToggle = () => {
+        // navRef.current.hasAttribute('data-visible') ? navToggle.setAttribute('aria-expanded'. true) : console.log('false')
+        if (navRef.current) {
+            navRef.current.toggleAttribute('data-visible')
+        };
+    };
+
     return (
-        <nav className='navbar' aria-label='Primary'>
+        <header className='navbar'>
             <HomeIcon/>
-            <MenuTitle title='Readers' page='/readers'>
-                <div className='nav-menu-option-wrapper'>
-                    <MenuOption icon={<img src="icons/handheld.svg" alt="handheld RFID reader icon" className='large-icon'/>}>Handhelds</MenuOption>
-                    <MenuOption icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
-                    <MenuOption icon={<img src="icons/multi-antenna.svg" alt="RFID multi-antenna reader icon" className='large-icon'/>}>Multi-antenna</MenuOption>
-                </div>
-            </MenuTitle>
-            <MenuTitle title='Tags' page='/tags'>
-                <div className='nav-menu-option-wrapper'>
-                    <MenuOption icon={<img src="icons/label.svg" alt="RFID label icon" className='large-icon'/>}>Labels</MenuOption>
-                    <MenuOption icon={<img src="icons/anti-theft.svg" alt="lock icon" className='large-icon'/>}>Anti-Theft</MenuOption>
-                    <MenuOption icon={<img src="icons/specialty-tag.svg" alt="specialty icon" className='large-icon'/>}>Specialty</MenuOption>
-                </div>
-            </MenuTitle>
-            <MenuTitle title='Software' page='/software'>Offerings</MenuTitle>
-            <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle>
-            <GradientButton text='Contact Us' page='/contactus'/>
-        </nav>
+            <button className="nav-toggle" aria-controls='navbar-titles' onClick={navToggle}>
+                <GiHamburgerMenu size="35"/>
+                <span className='visually-hidden'>Menu</span>
+            </button>
+            <nav className='navbar-titles' id='navbar-titles' aria-label='Primary' ref={navRef}>
+                <MenuTitle title='Readers' page='/readers'>
+                    <div className='nav-menu-option-wrapper'>
+                        <MenuOption icon={<img src="icons/handheld.svg" alt="handheld RFID reader icon" className='large-icon'/>}>Handhelds</MenuOption>
+                        <MenuOption icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
+                        <MenuOption icon={<img src="icons/multi-antenna.svg" alt="RFID multi-antenna reader icon" className='large-icon'/>}>Multi-antenna</MenuOption>
+                    </div>
+                </MenuTitle>
+                <MenuTitle title='Tags' page='/tags'>
+                    <div className='nav-menu-option-wrapper'>
+                        <MenuOption icon={<img src="icons/label.svg" alt="RFID label icon" className='large-icon'/>}>Labels</MenuOption>
+                        <MenuOption icon={<img src="icons/anti-theft.svg" alt="lock icon" className='large-icon'/>}>Anti-Theft</MenuOption>
+                        <MenuOption icon={<img src="icons/specialty-tag.svg" alt="specialty icon" className='large-icon'/>}>Specialty</MenuOption>
+                    </div>
+                </MenuTitle>
+                <MenuTitle title='Software' page='/software'>Offerings</MenuTitle>
+                <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle>
+                <GradientButton text='Contact Us' page='/contactus'/>
+            </nav>
+        </header>
     )
 }
 
@@ -43,7 +61,7 @@ const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any
             {title}
             <div className='nav-bridge'></div>
             <div className='nav-dropdown-wrapper group-hover:opacity-100'>
-                <span className='nav-dropdown group-hover:visible'>
+                <span className='nav-dropdown group-hover:md:visible'>
                     {children}
                 </span>
             </div>

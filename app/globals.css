@@ -66,12 +66,27 @@ section {
 
 @layer components {
 
+  /* Navigation */
   .navbar {
-    @apply fixed flex flex-col sm:flex-row
+    @apply fixed flex flex-row
     w-screen m-0 top-0 h-[64px] 
     z-10
   }
-  
+  .navbar-titles {
+    @apply hidden md:flex flex-row
+    w-screen m-0 top-0 
+    z-10
+  }
+  .navbar-titles[data-visible] {
+    @apply absolute grid text-center
+    top-28 bottom-20 left-0 gap-8 p-4 h-[14.8rem] min-h-[0]
+    bg-slate-900 rounded-lg
+  }
+  .nav-toggle {
+    @apply md:hidden
+    mr-8 ms-auto z-20
+    cursor-pointer bg-transparent 
+  }
 
 
   .nav-homeicon {
@@ -79,10 +94,8 @@ section {
     ml-[32px] mr-[20px]
   }
 
-
-
   .nav-menu-title {
-    @apply relative justify-center tracking-[0.075em]
+    @apply relative justify-center items-center tracking-[0.075em]
     my-auto mr-6 ml-6 h-7
     text-[18px] font-semibold
     transition-all
@@ -95,7 +108,7 @@ section {
     bg-400%
   }
   .nav-menu-title:hover::before {
-    @apply w-[100%] duration-[425ms] animate-gradient-fast
+    @apply md:w-[100%] duration-[425ms] animate-gradient-fast
   }
   
   .nav-bridge {
@@ -136,8 +149,8 @@ section {
   }
 
   .nav-gradientbutton {
-    @apply flex justify-center items-center shrink-0
-    rounded-full w-[128px] h-[50px] border shadow-2xl
+    @apply hidden md:flex justify-center items-center shrink-0
+    rounded-3xl w-[132px] h-[50px] border shadow-2xl
     my-auto ms-auto mx-[32px]
     font-semibold tracking-wide text-[17.5px]
     bg-gradient-to-r from-orange to-purple
@@ -150,6 +163,28 @@ section {
     @apply bg-350%
   }
 
+
+  /* Hero */
+  .container {
+    @apply w-screen p-24 ms-auto me-auto
+  }
+
+  .even-columns {
+    @apply grid grid-flow-col auto-cols-fr
+    gap-4
+  }
+
+  .hero-button {
+    @apply flex justify-center items-center shrink-0
+    rounded-3xl w-[128px] h-[44px] border shadow-2xl
+    font-semibold tracking-wide text-[17.5px]
+    bg-400%
+  }
+  .nav-gradientbutton:hover {
+    @apply bg-350%
+  }
+
+  /* Footer */
   footer {
     @apply flex flex-col w-screen
   }
@@ -158,14 +193,6 @@ section {
     @apply grid
   }
 
-  .container {
-    @apply w-screen p-4 ms-auto me-auto
-  }
-
-  .even-columns {
-    @apply grid grid-flow-col auto-cols-fr
-    gap-4
-  }
 }
 
 .nav-dropdown::before,
@@ -178,6 +205,17 @@ section {
   ) ;
   animation: rotation 4s linear infinite
 }
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* absolute font-bold text-3xl justify-around 
 min-h-[200px] left-44 */
 /* relative flex flex-col items-center p-2 */
