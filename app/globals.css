@@ -38,23 +38,37 @@
   100% { --gradient-angle: 360deg}
 }
 
-html {
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html, 
 body {
   height: 100%;
+ }
+
+body {
   color: rgb(var(--foreground-rgb));
   background: rgb(9, 9, 9);
   background-size: 400%;
-  /* background-repeat: no-repeat; */
   padding-top: 80px;
+}
+
+section {
+  overflow: hidden;
 }
 
 @layer components {
 
   .navbar {
-    @apply fixed top-0 h-[64px] w-screen m-0 flex flex-col sm:flex-row
+    @apply fixed flex flex-col sm:flex-row
+    w-screen m-0 top-0 h-[64px] 
     z-10
   }
   
@@ -135,13 +149,23 @@ body {
   .nav-gradientbutton:hover {
     @apply bg-350%
   }
-  
 
-  section {
-    @apply relative flex flex-col items-center 
-    p-24
+  footer {
+    @apply flex flex-col w-screen
   }
 
+  .footer-nav {
+    @apply grid
+  }
+
+  .container {
+    @apply w-screen p-4 ms-auto me-auto
+  }
+
+  .even-columns {
+    @apply grid grid-flow-col auto-cols-fr
+    gap-4
+  }
 }
 
 .nav-dropdown::before,
@@ -154,3 +178,6 @@ body {
   ) ;
   animation: rotation 4s linear infinite
 }
+/* absolute font-bold text-3xl justify-around 
+min-h-[200px] left-44 */
+/* relative flex flex-col items-center p-2 */
