@@ -21,7 +21,6 @@ export default function HomePage() {
           </div>
       </div>
     </div>
-
     </section>
 
     <section className='bg-gradient-to-r from-purple-1 to-purple bg-400% animate-gradient py-12'>
