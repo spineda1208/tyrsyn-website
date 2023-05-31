@@ -12,24 +12,16 @@ export default function HomePage() {
     </svg>
     </div>
 
-      <div className="container">
-        <div className="even-columns">
-          <div className='flex flex-col gap-8'>
-            <h1 className="font-black text-7xl text-white">RFID Solutions To Enhance, Streamline, and Improve</h1> {/*Innovation In Security Making World Trade Safer*/}
-            <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Eum dignissimos ipsa hic minima dolore laborum sunt obcaecati? 
-              Enim dolores sed et ipsam magnam eum quae ullam fugit, tempore dicta minus!</p>
-              <div className='flex flex-row gap-4'>
-                <Link href='/contactus' className='hero-button'>Contact Us</Link>
-                <a href='#aboutus' className='hero-button'>About Us</a>
-              </div>
+    <div className="container">
+      <div className='flex flex-col gap-8'>
+        <h1 className="font-black text-7xl text-white">Identification. Tracking. Efficency</h1>
+          <div className='flex flex-row gap-4'>
+            <Link href='/contactus' className='hero-button'>Contact Us</Link>
+            <a href='#aboutus' className='hero-button'>About Us</a>
           </div>
-          <div className='flex flex-col justify-center items-center'>
-              <Image src="logos/tyrsyn-white.svg" width="300" height="300" alt="logo"></Image>
-              <div className='text-center font-black text-[4rem]'>TYR & SYN</div>
-          </div>
-        </div>
       </div>
+    </div>
+
     </section>
 
     <section className='bg-gradient-to-r from-purple-1 to-purple bg-400% animate-gradient py-12'>
