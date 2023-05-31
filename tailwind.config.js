@@ -62,6 +62,7 @@ module.exports = {
         'black-1': '#090909',
         'orange': '#F15A24',
         'orange-1': 'hsl(16, 88%, 40%)',
+        'orange-2': 'hsl(16, 88%, 60%)',
         'purple': '#2E3192',
         'purple-1': 'hsl(238, 52%, 30%)',
       },

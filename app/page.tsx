@@ -5,17 +5,17 @@ export default function HomePage() {
   return (
     <>
     <section className='mb-8'>
-
+{/* Identification. Tracking. Efficency. */}
     <div className="custom-shape-top">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" className="shape-fill"></path>
     </svg>
-
     </div>
+
       <div className="container">
         <div className="even-columns">
           <div className='flex flex-col gap-8'>
-            <h1 className="font-black text-6xl text-white">RFID Solutions That Enhance, Streamline, and Improve</h1> {/*Innovation In Security Making World Trade Safer*/}
+            <h1 className="font-black text-7xl text-white">RFID Solutions To Enhance, Streamline, and Improve</h1> {/*Innovation In Security Making World Trade Safer*/}
             <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Eum dignissimos ipsa hic minima dolore laborum sunt obcaecati? 
               Enim dolores sed et ipsam magnam eum quae ullam fugit, tempore dicta minus!</p>
@@ -26,7 +26,7 @@ export default function HomePage() {
           </div>
           <div className='flex flex-col justify-center items-center'>
               <Image src="logos/tyrsyn-white.svg" width="300" height="300" alt="logo"></Image>
-              <div className='text-center font-black text-[4rem]'>Tyr & Syn</div>
+              <div className='text-center font-black text-[4rem]'>TYR & SYN</div>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function HomePage() {
       </div>
     </section>
 
-    <section className='bg-gradient-to-r from-purple to-orange bg-150%' id='aboutus'>
+    <section className='bg-gradient-to-r from-orange to-red-400 bg-150%' id='aboutus'>
       <div className='container'>
             <h2 className='font-bold text-5xl mb-10'>About Us</h2>
         <div className='even-columns'>

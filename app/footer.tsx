@@ -6,12 +6,11 @@ const PageFooter = () => {
     return (
         <footer>
             <div>
-                <Image src="logos/tyrsyn-white.svg" width="100" height="100" alt='White Logo'></Image>
-                <ul aria-label='Social links' role='list'>
+                <Image src="logos/tyrsyn-white.svg" width="100" height="100" alt='White Logo' className='mx-auto'></Image>
+                <ul className='footer-socials' aria-label='Social links' role='list'>
                     <li><a href="#" aria-label='facebook'></a></li>
                     <li><a href="#" aria-label='instagram'></a></li>
                     <li><a href="#" aria-label='linkedin'></a></li>
-                    <li><a href="#" aria-label='twitter'></a></li>
                 </ul>
             </div>
             <div>
@@ -29,7 +28,7 @@ const PageFooter = () => {
             </div>
             <div>
                 <Link href='https://idtechsolutionsindia.com'>
-                    <Image src="logos/id-tech.svg" alt='ID Tech Logo' width='100' height='100'/>
+                    <Image src="logos/id-tech-white.svg" alt='ID Tech Logo' width='150' height='100'/>
                 </Link>
             </div>
         </footer>

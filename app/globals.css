@@ -10,6 +10,13 @@
   --tyr-blue-100: 238, 52%, 30%;
   --syn-orange: 16, 88%, 54%;
   --syn-orange-100: 16, 88%, 40%;
+  --syn-orange-200: 16, 88%, 60%;
+  --orange-gradient: linear-gradient(
+    90deg,
+    var(--syn-orange),
+    var(--syn-orange-200)
+
+  )
 }
 
 @media (prefers-color-scheme: dark) {
@@ -65,16 +72,17 @@ section {
   overflow: hidden;
   line-height: 0;
   z-index: -1;
+  transform: rotate(180deg);
 }
 .custom-shape-top svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 400px;
+  height: 450px;
 }
-.custom-shape-top .shape-fill {
-  fill: black;
-}
+/* .custom-shape-top .shape-fill {
+  fill: hsl(var(--syn-orange-100));
+} */
 
 @layer components {
 
@@ -82,7 +90,7 @@ section {
   .navbar {
     @apply fixed flex flex-row
     w-screen m-0 top-0 h-[64px] 
-    z-10
+    z-10 bg-black-1
   }
   .navbar-titles {
     @apply hidden md:flex flex-row
@@ -201,11 +209,11 @@ section {
   footer {
     @apply grid md:grid-flow-col auto-cols-fr
     w-screen bottom-0
-    p-20 gap-10
+    py-20 gap-10
   }
 
   .footer-nav {
-    @apply grid
+    @apply grid columns-2 
   }
   .footer-nav a {
     @apply text-slate-700 text-lg
@@ -214,6 +222,10 @@ section {
   .footer-nav a:hover, 
   .footer-nav a:focus {
     @apply text-slate-300 text-lg
+  }
+
+  .footer-socials {
+    @apply text-white
   }
 
 }
