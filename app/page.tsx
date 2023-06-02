@@ -14,21 +14,18 @@ export default function HomePage() {
 
     <div className="container h-full">
       <div className="even-columns h-full">
-        <div className='flex flex-col'>
-      
-
+        <div className='flex flex-col gap-6'>
           <h1 className="hero-header">
-            <span data-content='Identification.' className='hero-text-white'>
-              <span className='hero-text-gradient'> Identification.</span>
+            <span data-content='Identification.' className='hero-text-white before:animate-hero-id-white'>
+              <span className='hero-text-gradient animate-hero-id-gradient'> Identification.</span>
             </span>
-            <span data-content='Tracking.' className='hero-text-white'>
-              <span className='hero-text-gradient'> Tracking.</span>
+            <span data-content='Tracking.' className='hero-text-white before:animate-hero-track-white'>
+              <span className='hero-text-gradient animate-hero-track-gradient'> Tracking.</span>
             </span>
-            <span data-content='Efficency.' className='hero-text-white'>
-              <span className='hero-text-gradient'> Efficency.</span>
+            <span data-content='Efficency.' className='hero-text-white before:animate-hero-eff-white'>
+              <span className='hero-text-gradient animate-hero-eff-gradient'> Efficency.</span>
             </span>
           </h1>
-
             <div className='flex flex-row gap-4'>
               <Link href='/contactus' className='hero-button'>Contact Us</Link>
               <a href='#aboutus' className='hero-button'>About Us</a>

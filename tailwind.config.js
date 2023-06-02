@@ -13,7 +13,6 @@ module.exports = {
     },
 
     extend: {
-
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -43,33 +42,94 @@ module.exports = {
       keyframes: {
         'gradient': {
           '0%': {'background-position': 'left'},
-          // '50%': {'background-position': '100% 50%'},
           '100%': {'background-position': 'right'},
         },
         'spin-gradient': {
           '0%': {'--gradient-angle': '0deg'},
           '100%': {'--gradient-angle': '360deg'}
-        }
-      },
+        },
 
-      animation: {
-        'gradient': 'gradient 4s infinite alternate',
-        'gradient-fast': 'gradient 2s infinite alternate',
-        'gradient-faster': 'gradient 1.5s infinite alternate',
-      },
+        'hero-id-gradient': {
+          'from, 16.667%, to': {
+            opacity: 1,
+          },
+          '33.333%, 83.333%': {
+            opacity: 0,
+          },
+        },
+        'hero-id-white': {
+          'from, 16.667%, to': {
+            opacity: 0,
+          },
+          '33.333%, 83.333%': {
+            opacity: 1,
+          },
+        },
+        'hero-track-gradient': {
+          'from, to': {
+            opacity: 0,
+          },
+          '33.333%, 50%': {
+            opacity: 1,
+          },
+          '16.667%, 66.667%': {
+            opacity: 0,
+          },
+        },
+        'hero-track-white': {
+          'from, to': {
+            opacity: 1,
+          },
+          '33.333%, 50%': {
+            opacity: 0,
+          },
+          '16.667%, 66.667%': {
+            opacity: 1,
+          },
+        },
+        'hero-eff-gradient': {
+          'from, 50%, to': {
+            opacity: 0,
+          },
+          '66.667%, 83.333%': {
+            opacity: 1,
+          },
+        },
+        'hero-eff-white': {
+          'from, 50%, to': {
+            opacity: 1,
+          },
+          '66.667%, 83.333%': {
+            opacity: 0,
+          },
+        },
+        },
+        
+        animation: {
+          'gradient': 'gradient 4s infinite alternate',
+          'gradient-fast': 'gradient 2s infinite alternate',
+          'gradient-faster': 'gradient 1.5s infinite alternate',
 
-      colors: {
-        'black-1': '#090909',
-        'orange': '#F15A24',
-        'orange-1': 'hsl(16, 88%, 40%)',
-        'orange-2': 'hsl(16, 88%, 60%)',
-        'purple': '#2E3192',
-        'purple-1': 'hsl(238, 52%, 30%)',
-      },
+          'hero-id-gradient': 'hero-id-gradient 8s infinite',
+          'hero-id-white': 'hero-id-white 8s infinite',
 
+          'hero-track-gradient': 'hero-track-gradient 8s infinite',
+          'hero-track-white': 'hero-track-white 8s infinite',
+
+          'hero-eff-gradient': 'hero-eff-gradient 8s infinite',
+          'hero-eff-white': 'hero-eff-white 8s infinite',
+        },
+        
+        colors: {
+          'black-1': '#090909',
+          'orange': '#F15A24',
+          'orange-1': 'hsl(16, 88%, 40%)',
+          'orange-2': 'hsl(16, 88%, 60%)',
+          'purple': '#2E3192',
+          'purple-1': 'hsl(238, 52%, 30%)',
+        },
+      },
+        
     },
 
-  },
-
-  plugins: [],
-}
+  }
