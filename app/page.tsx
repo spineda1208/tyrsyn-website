@@ -4,21 +4,38 @@ import Image from 'next/image';
 export default function HomePage() {
   return (
     <>
-    <section className='mb-8'>
-    {/* Identification. Tracking. Efficency. */}
-    <div className="custom-shape-top">
+    <section className='h-[85vh] mb-8'>
+    {/* <div className="custom-shape-top">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" className="shape-fill"></path>
     </svg>
-    </div>
+    </div> */}
 
-    <div className="container">
-      <div className='flex flex-col gap-8'>
-        <h1 className="font-black text-7xl text-white">Identification. Tracking. Efficency</h1>
-          <div className='flex flex-row gap-4'>
-            <Link href='/contactus' className='hero-button'>Contact Us</Link>
-            <a href='#aboutus' className='hero-button'>About Us</a>
-          </div>
+
+    <div className="container h-full">
+      <div className="even-columns h-full">
+        <div className='flex flex-col'>
+      
+
+          <h1 className="hero-header">
+            <span data-content='Identification.' className='hero-text-white'>
+              <span className='hero-text-gradient'> Identification.</span>
+            </span>
+            <span data-content='Tracking.' className='hero-text-white'>
+              <span className='hero-text-gradient'> Tracking.</span>
+            </span>
+            <span data-content='Efficency.' className='hero-text-white'>
+              <span className='hero-text-gradient'> Efficency.</span>
+            </span>
+          </h1>
+
+            <div className='flex flex-row gap-4'>
+              <Link href='/contactus' className='hero-button'>Contact Us</Link>
+              <a href='#aboutus' className='hero-button'>About Us</a>
+            </div>
+        </div>
+
+        <div className="flex"></div>
       </div>
     </div>
     </section>
