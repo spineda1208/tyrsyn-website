@@ -28,10 +28,12 @@ const PageFooter = () => {
                     </ul>
                 </nav>
             </div>
-            <div className='flex justify-center cursor-pointer select-none opacity-50 hover:opacity-100 transition-all duration-200'>
+            <div className='flex justify-center select-none'>
+                <div className='w-[150px] sm:mr-40'>
                 <Link href='https://www.idtechsolutionsindia.com'>
-                    <Image src="logos/idtech/powered-by.svg" alt='ID Tech Logo' width='150' height='100'/>
+                    <Image src="logos/idtech/powered-by.svg" alt='ID Tech Logo' width='150' height='64' className='opacity-50 hover:opacity-100 transition-all duration-200'/>
                 </Link>
+                </div>
             </div>
         </footer>
     )
