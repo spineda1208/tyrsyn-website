@@ -1,16 +1,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import HomeIcon from './navbar'
+import {BsFacebook, BsInstagram, BsLinkedin} from 'react-icons/bs'
 
 const PageFooter = () => {
     return (
         <footer>
-            <div>
-                <Image src="logos/tyrsyn-white.svg" width="100" height="100" alt='White Logo' className='mx-auto'></Image>
+            <div className='flex flex-col'>
+                <Link href="/">
+                    <Image src="logos/tyrsyn-white.svg" width="85" height="85" alt='White Logo' className='mx-auto mb-6 opacity-100 hover:opacity-50 transition-all duration-200'></Image>
+                </Link>
                 <ul className='footer-socials' aria-label='Social links' role='list'>
-                    <li><a href="#" aria-label='facebook'></a></li>
-                    <li><a href="#" aria-label='instagram'></a></li>
-                    <li><a href="#" aria-label='linkedin'></a></li>
+                    <li><Link href="https://www.facebook.com/people/TyrSyn/100087883292431/" aria-label='facebook' className='hover:text-slate-700 transition-all duration-200'><BsFacebook size="25"/></Link></li>
+                    <li><Link href="https://www.instagram.com/tyrandsyn/" aria-label='instagram' className='hover:text-slate-700 transition-all duration-200'><BsInstagram size="25"/></Link></li>
+                    <li><Link href="https://linkedin.com" aria-label='linkedin' className='hover:text-slate-700 transition-all duration-200'><BsLinkedin size="25"/></Link></li>
                 </ul>
             </div>
             <div>
@@ -26,10 +28,12 @@ const PageFooter = () => {
                     </ul>
                 </nav>
             </div>
-            <div>
-                <Link href='https://idtechsolutionsindia.com'>
-                    <Image src="logos/id-tech-white.svg" alt='ID Tech Logo' width='150' height='100'/>
-                </Link>
+            <div className='relative'>
+                <div className='absolute cursor-pointer select-none opacity-50 hover:opacity-100 transition-all duration-200'>
+                    <Link href='https://www.idtechsolutionsindia.com'>
+                        <Image src="logos/idtech/powered-by.svg" alt='ID Tech Logo' width='150' height='100'/>
+                    </Link>
+                </div>
             </div>
         </footer>
     )
