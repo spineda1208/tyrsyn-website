@@ -15,7 +15,7 @@ const PageFooter = () => {
                     <li><Link href="https://linkedin.com" aria-label='linkedin' className='hover:text-slate-700 transition-all duration-200'><BsLinkedin size="25"/></Link></li>
                 </ul>
             </div>
-            <div>
+            <div className='flex justify-center sm:contents'>
                 <nav className='footer-nav'>
                     <ul aria-label='Footer' role='list'>
                         <li><Link href='/'>Home</Link></li>
@@ -28,12 +28,10 @@ const PageFooter = () => {
                     </ul>
                 </nav>
             </div>
-            <div className='relative'>
-                <div className='absolute cursor-pointer select-none opacity-50 hover:opacity-100 transition-all duration-200'>
-                    <Link href='https://www.idtechsolutionsindia.com'>
-                        <Image src="logos/idtech/powered-by.svg" alt='ID Tech Logo' width='150' height='100'/>
-                    </Link>
-                </div>
+            <div className='flex justify-center cursor-pointer select-none opacity-50 hover:opacity-100 transition-all duration-200'>
+                <Link href='https://www.idtechsolutionsindia.com'>
+                    <Image src="logos/idtech/powered-by.svg" alt='ID Tech Logo' width='150' height='100'/>
+                </Link>
             </div>
         </footer>
     )
