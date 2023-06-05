@@ -79,7 +79,7 @@ export default function HomePage() {
           </ul>
           <div className='home-card bg-transparent mt-16 justify-center'>
             <h3 className='home-card-title mb-2'>Values</h3>
-            {/* <div className='sm:hidden content-[""] mx-auto w-20 h-1 sm:w-32 sm:h-2 rounded-xl bg-gradient-to-r bg-350% from-purple to-red-600 animate-gradient mb-4'></div> */}
+            <div className='sm:hidden content-[""] mx-auto w-20 h-1 sm:w-32 sm:h-2 rounded-xl bg-black mb-4'></div>
             <ul className='card-list justify-center'>
               <li><h4>Innovation</h4>We foster a culture of continuous innovation, embracing new technologies and ideas to stay at the forefront of the RFID industry. We constantly seek innovative solutions that address our clients evolving needs and help them overcome challenges.</li>  
               <li><h4>Reliability</h4>We are committed to delivering high-quality and reliable RFID solutions that our clients can depend on. We prioritize the performance, accuracy, and durability of our products, ensuring they meet the highest standards of reliability and functionality.</li>  
