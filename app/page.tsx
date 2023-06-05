@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function HomePage() {
   return (
@@ -67,14 +66,14 @@ export default function HomePage() {
         </ul>
       </div>
     </section>
-    <hr className='text-black'/>
+
     <section className='' id='aboutus'>
       <div className='container flex flex-col'>
           <h2 className='font-bold text-5xl mb-10 text-center'>About Us</h2>
           <ul className='flex flex-col md:flex-row gap-16'>
             <li className='home-card'>
               <h3 className='home-card-title'>Vision</h3>
-              <p>Our vision is to be a global leader in RFID solutions, driving the adoption and advancement of RFID technology worldwide. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
+              <p>Our vision is to be a  leader in RFID solutions, driving the adoption and advancement of RFID technology worldwide. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
             </li>
             <li className='home-card'>
               <h3 className='home-card-title'>Mission</h3>
@@ -82,16 +81,17 @@ export default function HomePage() {
             </li>
           </ul>
 
-          <div className='home-card mt-16'>
-            <h3 className='home-card-title'>Values</h3>
-            <p>
-              1	Innovation: We foster a culture of continuous innovation, embracing new technologies and ideas to stay at the forefront of the RFID industry. We constantly seek innovative solutions that address our clients evolving needs and help them overcome challenges.
-              2	Reliability: We are committed to delivering high-quality and reliable RFID solutions that our clients can depend on. We prioritize the performance, accuracy, and durability of our products, ensuring they meet the highest standards of reliability and functionality.
-              3	Customer Focus: We place our clients at the center of everything we do. We listen to their needs, understand their unique requirements, and strive to exceed their expectations. We are dedicated to providing exceptional customer service, building long-term relationships, and being a trusted partner in their RFID implementation journey.
-              4	Collaboration: We believe in the power of collaboration and partnerships. We work closely with our clients, industry experts, and technology partners to co-create innovative solutions and drive meaningful outcomes. We foster a collaborative and inclusive environment where teamwork and knowledge sharing thrive.
-              5	Integrity: We conduct our business with utmost integrity, ethics, and transparency. We adhere to the highest standards of professionalism, respecting the confidentiality and privacy of our clients. We maintain honesty, trustworthiness, and ethical conduct in all our interactions.
-            These mission, vision, and values statements reflect our commitment to providing top-notch RFID solutions, driving innovation, and creating value for our clients while upholding the principles of integrity and customer-centricity.
-            </p>
+          <div className='home-card mt-16 justify-center'>
+            <h3 className='home-card-title mb-4'>Values</h3>
+            <ul className='card-list justify-center'>
+              <li><h4>Innovation</h4>We foster a culture of continuous innovation, embracing new technologies and ideas to stay at the forefront of the RFID industry. We constantly seek innovative solutions that address our clients evolving needs and help them overcome challenges.</li>  
+              <li><h4>Reliability</h4>We are committed to delivering high-quality and reliable RFID solutions that our clients can depend on. We prioritize the performance, accuracy, and durability of our products, ensuring they meet the highest standards of reliability and functionality.</li>  
+              <li><h4>Customer Focus</h4>We place our clients at the center of everything we do. We listen to their needs, understand their unique requirements, and strive to exceed their expectations. We are dedicated to providing exceptional customer service, building long-term relationships, and being a trusted partner in their RFID implementation journey.</li>  
+              <div className='hidden md:w-full'/>
+              <div className='hidden md:w-1'/>
+              <li><h4>Collaboration</h4>We believe in the power of collaboration and partnerships. We work closely with our clients, industry experts, and technology partners to co-create innovative solutions and drive meaningful outcomes. We foster a collaborative and inclusive environment where teamwork and knowledge sharing thrive.</li>  
+              <li><h4>Integrity</h4>We conduct our business with utmost integrity, ethics, and transparency. We adhere to the highest standards of professionalism, respecting the confidentiality and privacy of our clients. We maintain honesty, trustworthiness, and ethical conduct in all our interactions.</li>  
+            </ul>
           </div>
       </div>
     </section>

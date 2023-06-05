@@ -115,7 +115,8 @@ section {
   }
 
   .nav-menu-title {
-    @apply relative justify-center items-center tracking-[0.075em]
+    @apply relative justify-center items-center select-none cursor-pointer
+    tracking-[0.075em]
     my-auto mr-6 ml-6 h-7
     text-[18px] font-semibold
     transition-all
@@ -244,6 +245,18 @@ section {
   .home-card-title {
     @apply font-semibold text-3xl text-center
     mb-2
+  }
+
+  .card-list {
+    @apply flex flex-col md:flex-row gap-8 w-full flex-wrap
+  }
+  .card-list li {
+    @apply p-6 rounded-xl w-96 mx-auto sm:mx-0 select-none cursor-default
+    bg-black-1 border-white border-x-2 border-y-2
+    hover:bg-gray-900 transition-all
+  }
+  .card-list h4 {
+    @apply font-semibold text-lg mb-4 text-center select-none cursor-default
   }
 
   /* Footer */

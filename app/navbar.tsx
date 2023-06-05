@@ -26,20 +26,20 @@ const NavBar = () => {
             <nav className='navbar-titles' id='navbar-titles' aria-label='Primary' ref={navRef}>
                 <MenuTitle title='Readers' page='/readers'>
                     <div className='nav-menu-option-wrapper'>
-                        <MenuOption icon={<img src="icons/handheld.svg" alt="handheld RFID reader icon" className='large-icon'/>}>Handhelds</MenuOption>
-                        <MenuOption icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
-                        <MenuOption icon={<img src="icons/multi-antenna.svg" alt="RFID multi-antenna reader icon" className='large-icon'/>}>Multi-antenna</MenuOption>
+                        <MenuOption page='/readers#integrated-readers' icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
+                        <MenuOption page='/readers#multi-antenna-readers' icon={<img src="icons/multi-antenna.svg" alt="RFID multi-antenna reader icon" className='large-icon'/>}>Multi-antenna</MenuOption>
+                        <MenuOption page='/readers#handheld-readers' icon={<img src="icons/handheld.svg" alt="handheld RFID reader icon" className='large-icon'/>}>Handhelds</MenuOption>
                     </div>
                 </MenuTitle>
                 <MenuTitle title='Tags' page='/tags'>
                     <div className='nav-menu-option-wrapper'>
-                        <MenuOption icon={<img src="icons/label.svg" alt="RFID label icon" className='large-icon'/>}>Labels</MenuOption>
-                        <MenuOption icon={<img src="icons/anti-theft.svg" alt="lock icon" className='large-icon'/>}>Anti-Theft</MenuOption>
-                        <MenuOption icon={<img src="icons/specialty-tag.svg" alt="specialty icon" className='large-icon'/>}>Specialty</MenuOption>
+                        <MenuOption page='/tags#labels' icon={<img src="icons/label.svg" alt="RFID label icon" className='large-icon'/>}>Labels</MenuOption>
+                        <MenuOption page='/tags#anti-theft' icon={<img src="icons/anti-theft.svg" alt="lock icon" className='large-icon'/>}>Anti-Theft</MenuOption>
+                        <MenuOption page='/tags#specialty' icon={<img src="icons/specialty-tag.svg" alt="specialty icon" className='large-icon'/>}>Specialty</MenuOption>
                     </div>
                 </MenuTitle>
-                <MenuTitle title='Software' page='/software'>Offerings</MenuTitle>
-                <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle>
+                {/* <MenuTitle title='Software' page='/software'>Offerings</MenuTitle> */}
+                {/* <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle> */}
                 <GradientButton text='Contact Us' page='/contactus'/>
             </nav>
         </header>
@@ -54,10 +54,10 @@ export const HomeIcon = () => {
     )
 }
 
-const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any, title: string, page: string}) => {
+const MenuTitle = ({children, title = 'placeholder'}: {children: any, title: string, page: string}) => {
     return (
         <>
-        <Link href={page} className='nav-menu-title hover:text-slate-400 group'>
+        <div className='nav-menu-title group'>
             {title}
             <div className='nav-bridge'></div>
             <div className='nav-dropdown-wrapper group-hover:opacity-100'>
@@ -65,19 +65,19 @@ const MenuTitle = ({children, title = 'placeholder', page = '/'}: {children: any
                     {children}
                 </span>
             </div>
-        </Link>
+        </div>
         </>
     )
 }
 
-const MenuOption = ({children, icon}:{children: string, icon: any}) =>{
+const MenuOption = ({children, icon, page = '/'}:{children: string, icon: any, page: string}) => {
     return (
-        <div className='nav-menu-option group hover:text-slate-500'>
+        <Link href={page} className='nav-menu-option hover:text-slate-500'>
             { children }
-            <div className='large-icon-wrapper group-hover:fill-slate-500'>
+            <div className='large-icon-wrapper'>
                 { icon }
             </div>
-        </div>
+        </Link>
     )
 }
 

@@ -1,29 +1,25 @@
 export default function ReadersPage() {
     return (
       <>
-      <h1 className="hero-header">
-        <span data-content="Identification." className="hero-text-white">
-          <span className="hero-text-gradient"> Identification.</span>
-        </span>
-        <span data-content="Tracking." className="hero-text-white">
-          <span className="hero-text-gradient"> Tracking.</span>
-        </span>
-        <span data-content="Efficency." className="hero-text-white">
-          <span className="hero-text-gradient"> Efficency.</span>
-        </span>
-      </h1>
+      <section>
+        <div className="container py-2">
+          <h1 className="text-center font-semibold text-3xl">RFID Readers</h1>
+          <p>An RFID reader is a device that uses radio waves to read data from an RFID tag. RFID tags are small, electronic devices that contain a unique identifier. When an RFID reader is turned on, it emits a radio wave signal. If an RFID tag is within range of the reader, the tag will receive the signal and respond by sending back its unique identifier. The reader will then decode the identifier and send it to a computer or other device for processing. RFID readers are used in a variety of applications, including inventory management, asset tracking, and access control.</p>
+          
+        </div>
+      </section >
 
-      <h1 className="hero-header">
-        <span data-conent="Identification." className="hero-text-white">
-          <span className="hero-text-gradient"> Identification.</span>
-        </span>
-        <span data-conent="Tracking." className="hero-text-white">
-          <span className="hero-text-gradient"> Tracking.</span>
-        </span>
-        <span data-conent="Efficency." className="hero-text-white">
-          <span className="hero-text-gradient"> Efficency.</span>
-        </span>
-      </h1>
+      <section id="integrated-readers">
+        <div className="container">hello</div>
+      </section>
+
+      <section id="multi-antenna-readers">
+        <div className="container">my</div>
+      </section>
+
+      <section id="handheld-readers">
+        <div className="container">name is</div>
+      </section>
       </>
     )
   }
