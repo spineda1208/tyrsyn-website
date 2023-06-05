@@ -3,41 +3,38 @@ import Link from 'next/link';
 export default function HomePage() {
   return (
     <>
-    <section className='h-[85vh] mb-8'>
-    <div className="custom-shape-top">
+    <section className='pt-32 pb-40 back-image content-[""]'>
+    {/* <div className="custom-shape-top">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" className="shape-fill"></path>
     </svg>
-    </div>
-
-
-    <div className="container h-full">
+    </div> */}
+    <div className="container pt-0 h-full">
       <div className="even-columns h-full">
-        <div className='flex flex-col gap-6'>
-          <h1 className="hero-header mt-2">
+        <div className='flex flex-col gap-4'>
+          <h1 className="hero-header">
             <span data-content='Identification.' className='hero-text-white before:animate-hero-id-white'>
-              <span className='hero-text-gradient animate-hero-id-gradient'> Identification.</span>
+              <span className='hero-text-gradient animate-hero-id-gradient'>Identification.</span>
             </span>
             <span data-content='Tracking.' className='hero-text-white before:animate-hero-track-white'>
-              <span className='hero-text-gradient animate-hero-track-gradient'> Tracking.</span>
+              <span className='hero-text-gradient animate-hero-track-gradient'>Tracking.</span>
             </span>
             <span data-content='Efficency.' className='hero-text-white before:animate-hero-eff-white'>
-              <span className='hero-text-gradient animate-hero-eff-gradient'> Efficency.</span>
+              <span className='hero-text-gradient animate-hero-eff-gradient'>Efficency.</span>
             </span>
           </h1>
-            <div className='flex flex-row gap-4'>
-              <Link href='/contactus' className='hero-button'>Contact Us</Link>
-              <a href='#aboutus' className='hero-button'>About Us</a>
-            </div>
+          <div className='px-2 max-w-xs sm:max-w-md font-thin sm:font-medium sm:tracking-wider'>We provide state of the art solutions for inventory and asset management with an ecosystem of RFID devices and software.</div>
+          <div className='flex flex-row gap-4'>
+            <Link href='/contactus' className='hero-button'>Contact Us</Link>
+            <Link href='#aboutus' className='hidden sm:hero-button'>About Us</Link>
+          </div>
         </div>
-
-        <div className="flex"></div>
       </div>
     </div>
     </section>
-
-    <section className='py-12'>
-      <div className='container flex flex-col gap-8 bg-black rounded-lg p-16'>
+    {/* <div className='content-[""] w-screen h-4 bg-gradient-to-r from-purple to-red-600'></div> */}
+    {/* <section className='pb-12'>
+      <div className='container flex flex-col gap-8 bg-black rounded-lg p-16 pt-0'>
         <h2 className='font-semibold text-[2.5rem] text-center'>What We Do</h2>
         <div className='even-columns'>
           <div>
@@ -65,11 +62,11 @@ export default function HomePage() {
           <li>5</li>
         </ul>
       </div>
-    </section>
+    </section> */}
 
-    <section className='' id='aboutus'>
-      <div className='container flex flex-col'>
-          <h2 className='font-bold text-5xl mb-10 text-center'>About Us</h2>
+    <section id='aboutus'>
+      <div className='pb-8 container flex flex-col'>
+          <h2 className='font-bold text-2xl sm:text-5xl  mb-10 text-center'>About Us</h2>
           <ul className='flex flex-col md:flex-row gap-16'>
             <li className='home-card'>
               <h3 className='home-card-title'>Vision</h3>
@@ -80,9 +77,9 @@ export default function HomePage() {
               <p>To provide innovative and reliable RFID solutions that enhance efficiency, visibility, and productivity for our clients across various industries. We strive to be a trusted partner in their digital transformation journey, enabling them to optimize operations, improve asset tracking, and streamline processes through cutting-edge RFID technology.</p>
             </li>
           </ul>
-
-          <div className='home-card mt-16 justify-center'>
-            <h3 className='home-card-title mb-4'>Values</h3>
+          <div className='home-card bg-transparent mt-16 justify-center'>
+            <h3 className='home-card-title mb-2'>Values</h3>
+            {/* <div className='sm:hidden content-[""] mx-auto w-20 h-1 sm:w-32 sm:h-2 rounded-xl bg-gradient-to-r bg-350% from-purple to-red-600 animate-gradient mb-4'></div> */}
             <ul className='card-list justify-center'>
               <li><h4>Innovation</h4>We foster a culture of continuous innovation, embracing new technologies and ideas to stay at the forefront of the RFID industry. We constantly seek innovative solutions that address our clients evolving needs and help them overcome challenges.</li>  
               <li><h4>Reliability</h4>We are committed to delivering high-quality and reliable RFID solutions that our clients can depend on. We prioritize the performance, accuracy, and durability of our products, ensuring they meet the highest standards of reliability and functionality.</li>  

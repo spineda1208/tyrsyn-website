@@ -21,8 +21,8 @@ const PageFooter = () => {
                         <li><Link href='/'>Home</Link></li>
                         <li><Link href='/readers'>Readers</Link></li>
                         <li><Link href='/tags'>Tags</Link></li>
-                        <li><Link href='/software'>Software</Link></li>
-                        <li><Link href='/solutions'>Solutions</Link></li>
+                        {/* <li><Link href='/software'>Software</Link></li> */}
+                        {/* <li><Link href='/solutions'>Solutions</Link></li> */}
                         <li><Link href='/#aboutus'>About Us</Link></li>
                         <li><Link href='/contactus'>Contact Us</Link></li>
                     </ul>

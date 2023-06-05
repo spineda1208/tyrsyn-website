@@ -20,7 +20,7 @@ const NavBar = () => {
         <header className='navbar'>
             <HomeIcon/>
             <button className="nav-toggle" aria-controls='navbar-titles' onClick={navToggle}>
-                <GiHamburgerMenu size="35"/>
+                <GiHamburgerMenu className='hover:text-orange transition-all duration-600' size="35"/>
                 <span className='visually-hidden'>Menu</span>
             </button>
             <nav className='navbar-titles' id='navbar-titles' aria-label='Primary' ref={navRef}>
@@ -40,8 +40,9 @@ const NavBar = () => {
                 </MenuTitle>
                 {/* <MenuTitle title='Software' page='/software'>Offerings</MenuTitle> */}
                 {/* <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle> */}
-                <GradientButton text='Contact Us' page='/contactus'/>
+                <Link href='/contactus' className='hover:text-slate-400 transition-all duration-400 inline sm:hidden'>Contact Us</Link>
             </nav>
+            <GradientButton text='Contact Us' page='/contactus'/>
         </header>
     )
 }
@@ -54,11 +55,10 @@ export const HomeIcon = () => {
     )
 }
 
-const MenuTitle = ({children, title = 'placeholder'}: {children: any, title: string, page: string}) => {
+const MenuTitle = ({children = <></>, title = 'placeholder', page = '#'}: {children?: any, title: string, page: string}) => {
     return (
-        <>
         <div className='nav-menu-title group'>
-            {title}
+            <Link href={page} className='group-hover:text-slate-400 transition-all duration-400'>{title}</Link>
             <div className='nav-bridge'></div>
             <div className='nav-dropdown-wrapper group-hover:opacity-100'>
                 <span className='nav-dropdown group-hover:md:visible'>
@@ -66,15 +66,14 @@ const MenuTitle = ({children, title = 'placeholder'}: {children: any, title: str
                 </span>
             </div>
         </div>
-        </>
     )
 }
 
 const MenuOption = ({children, icon, page = '/'}:{children: string, icon: any, page: string}) => {
     return (
-        <Link href={page} className='nav-menu-option hover:text-slate-500'>
+        <Link href={page} className='nav-menu-option group'>
             { children }
-            <div className='large-icon-wrapper'>
+            <div className='large-icon-wrapper group-hover:fill-slate-400'>
                 { icon }
             </div>
         </Link>
