@@ -32,6 +32,66 @@ export default function HomePage() {
       </div>
     </div>
     </section>
+
+    <section id='aboutus'>
+      <div className='pb-8 container flex flex-col'>
+          <h2 className='page-header'>About Us</h2>
+          <ul className='flex flex-col md:flex-row gap-16'>
+            <li className='home-card'>
+              <h3 className='home-card-title'>Vision</h3>
+              <p>Our vision is to be a leader in RFID solutions, driving the adoption and advancement of RFID technology worldwide. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
+            </li>
+            <li className='home-card'>
+              <h3 className='home-card-title'>Mission</h3>
+              <p>To provide innovative and reliable RFID solutions that enhance efficiency, visibility, and productivity for our clients across various industries. We strive to be a trusted partner in their digital transformation journey, enabling them to optimize operations, improve asset tracking, and streamline processes through cutting-edge RFID technology.</p>
+            </li>
+          </ul>
+          {/* <div className='home-card bg-transparent mt-16 justify-center'>
+            <h3 className='home-card-title mb-2'>Values</h3>
+            <div className='sm:hidden content-[""] mx-auto w-20 h-1 sm:w-32 sm:h-2 rounded-xl bg-black mb-4'></div>
+            <ul className='card-list justify-center'>
+              <li><h4>Innovation</h4>We foster a culture of continuous innovation, embracing new technologies and ideas to stay at the forefront of the RFID industry. We constantly seek innovative solutions that address our clients evolving needs and help them overcome challenges.</li>  
+              <li><h4>Reliability</h4>We are committed to delivering high-quality and reliable RFID solutions that our clients can depend on. We prioritize the performance, accuracy, and durability of our products, ensuring they meet the highest standards of reliability and functionality.</li>  
+              <li><h4>Customer Focus</h4>We place our clients at the center of everything we do. We listen to their needs, understand their unique requirements, and strive to exceed their expectations. We are dedicated to providing exceptional customer service, building long-term relationships, and being a trusted partner in their RFID implementation journey.</li>  
+              <div className='hidden md:w-full'/>
+              <div className='hidden md:w-1'/>
+              <li><h4>Collaboration</h4>We believe in the power of collaboration and partnerships. We work closely with our clients, industry experts, and technology partners to co-create innovative solutions and drive meaningful outcomes. We foster a collaborative and inclusive environment where teamwork and knowledge sharing thrive.</li>  
+              <li><h4>Integrity</h4>We conduct our business with utmost integrity, ethics, and transparency. We adhere to the highest standards of professionalism, respecting the confidentiality and privacy of our clients. We maintain honesty, trustworthiness, and ethical conduct in all our interactions.</li>  
+            </ul>
+          </div> */}
+      </div>
+    </section>
+
+    <section>
+      <div className='container'>
+        <div className='even-columns h-96'>
+          <div className='home-text-wrapper'>
+            <div className='home-text-pre text-purple'> Lorem, ipsum dolor.</div>
+            <h3 className='home-text-header'>Lorem ipsum dolor sit amet consectetur.</h3>
+            <p className='home-text-subtext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit deleniti aut!</p>
+          </div>
+          <div className='home-showcase-blue'>
+          <img src="logos/tyrsyn-white.svg" alt=""/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div className='container'>
+        <div className='even-columns h-96'>
+          <div className='home-text-wrapper'>
+            <div className='home-text-pre text-orange'> Lorem, ipsum dolor.</div>
+            <h3 className='home-text-header'>Lorem ipsum dolor sit amet consectetur.</h3>
+            <p className='home-text-subtext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit deleniti aut!</p>
+          </div>
+          <div className='home-showcase-orange'>
+          <img src="logos/tyrsyn-black.svg" alt=""/>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* <div className='content-[""] w-screen h-4 bg-gradient-to-r from-purple to-red-600'></div> */}
     {/* <section className='pb-12'>
       <div className='container flex flex-col gap-8 bg-black rounded-lg p-16 pt-0'>
@@ -63,35 +123,7 @@ export default function HomePage() {
         </ul>
       </div>
     </section> */}
-
-    <section id='aboutus'>
-      <div className='pb-8 container flex flex-col'>
-          <h2 className='font-bold text-2xl sm:text-5xl  mb-10 text-center'>About Us</h2>
-          <ul className='flex flex-col md:flex-row gap-16'>
-            <li className='home-card'>
-              <h3 className='home-card-title'>Vision</h3>
-              <p>Our vision is to be a  leader in RFID solutions, driving the adoption and advancement of RFID technology worldwide. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
-            </li>
-            <li className='home-card'>
-              <h3 className='home-card-title'>Mission</h3>
-              <p>To provide innovative and reliable RFID solutions that enhance efficiency, visibility, and productivity for our clients across various industries. We strive to be a trusted partner in their digital transformation journey, enabling them to optimize operations, improve asset tracking, and streamline processes through cutting-edge RFID technology.</p>
-            </li>
-          </ul>
-          <div className='home-card bg-transparent mt-16 justify-center'>
-            <h3 className='home-card-title mb-2'>Values</h3>
-            <div className='sm:hidden content-[""] mx-auto w-20 h-1 sm:w-32 sm:h-2 rounded-xl bg-black mb-4'></div>
-            <ul className='card-list justify-center'>
-              <li><h4>Innovation</h4>We foster a culture of continuous innovation, embracing new technologies and ideas to stay at the forefront of the RFID industry. We constantly seek innovative solutions that address our clients evolving needs and help them overcome challenges.</li>  
-              <li><h4>Reliability</h4>We are committed to delivering high-quality and reliable RFID solutions that our clients can depend on. We prioritize the performance, accuracy, and durability of our products, ensuring they meet the highest standards of reliability and functionality.</li>  
-              <li><h4>Customer Focus</h4>We place our clients at the center of everything we do. We listen to their needs, understand their unique requirements, and strive to exceed their expectations. We are dedicated to providing exceptional customer service, building long-term relationships, and being a trusted partner in their RFID implementation journey.</li>  
-              <div className='hidden md:w-full'/>
-              <div className='hidden md:w-1'/>
-              <li><h4>Collaboration</h4>We believe in the power of collaboration and partnerships. We work closely with our clients, industry experts, and technology partners to co-create innovative solutions and drive meaningful outcomes. We foster a collaborative and inclusive environment where teamwork and knowledge sharing thrive.</li>  
-              <li><h4>Integrity</h4>We conduct our business with utmost integrity, ethics, and transparency. We adhere to the highest standards of professionalism, respecting the confidentiality and privacy of our clients. We maintain honesty, trustworthiness, and ethical conduct in all our interactions.</li>  
-            </ul>
-          </div>
-      </div>
-    </section>
     </>
+
   )
 }

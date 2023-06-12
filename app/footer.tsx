@@ -31,7 +31,7 @@ const PageFooter = () => {
             <div className='flex justify-center select-none'>
                 <div className='w-[150px] sm:mr-40'>
                 <Link href='https://www.idtechsolutionsindia.com'>
-                    <Image src="logos/idtech/powered-by.svg" alt='ID Tech Logo' width='150' height='64' className='opacity-50 hover:opacity-80 transition-all duration-200'/>
+                    <Image src="logos/idtech/powered-by.svg" alt='ID Tech Logo' width='150' height='64' className='opacity-100 hover:opacity-80 transition-all duration-200'/>
                 </Link>
                 </div>
             </div>

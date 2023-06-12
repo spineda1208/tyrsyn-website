@@ -24,20 +24,22 @@ const NavBar = () => {
                 <span className='visually-hidden'>Menu</span>
             </button>
             <nav className='navbar-titles' id='navbar-titles' aria-label='Primary' ref={navRef}>
-                <MenuTitle title='Readers' page='/readers'>
+            <Link href='/readers' className='nav-menu-title hover:text-slate-400 transition-all duration-400'>Readers</Link>
+            <Link href='/readers' className='nav-menu-title hover:text-slate-400 transition-all duration-400'>Tags</Link>
+                {/* <MenuTitle title='Readers' page='/readers'>
                     <div className='nav-menu-option-wrapper'>
                         <MenuOption page='/readers#integrated-readers' icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
                         <MenuOption page='/readers#multi-antenna-readers' icon={<img src="icons/multi-antenna.svg" alt="RFID multi-antenna reader icon" className='large-icon'/>}>Multi-antenna</MenuOption>
                         <MenuOption page='/readers#handheld-readers' icon={<img src="icons/handheld.svg" alt="handheld RFID reader icon" className='large-icon'/>}>Handhelds</MenuOption>
                     </div>
-                </MenuTitle>
-                <MenuTitle title='Tags' page='/tags'>
+                </MenuTitle> */}
+                {/* <MenuTitle title='Tags' page='/tags'>
                     <div className='nav-menu-option-wrapper'>
                         <MenuOption page='/tags#labels' icon={<img src="icons/label.svg" alt="RFID label icon" className='large-icon'/>}>Labels</MenuOption>
                         <MenuOption page='/tags#anti-theft' icon={<img src="icons/anti-theft.svg" alt="lock icon" className='large-icon'/>}>Anti-Theft</MenuOption>
                         <MenuOption page='/tags#specialty' icon={<img src="icons/specialty-tag.svg" alt="specialty icon" className='large-icon'/>}>Specialty</MenuOption>
                     </div>
-                </MenuTitle>
+                </MenuTitle> */}
                 {/* <MenuTitle title='Software' page='/software'>Offerings</MenuTitle> */}
                 {/* <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle> */}
                 <Link href='/contactus' className='hover:text-slate-400 transition-all duration-400 inline sm:hidden'>Contact Us</Link>
