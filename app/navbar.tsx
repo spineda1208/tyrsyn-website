@@ -25,7 +25,7 @@ const NavBar = () => {
             </button>
             <nav className='navbar-titles' id='navbar-titles' aria-label='Primary' ref={navRef}>
             <Link href='/readers' className='nav-menu-title hover:text-slate-400 transition-all duration-400'>Readers</Link>
-            <Link href='/readers' className='nav-menu-title hover:text-slate-400 transition-all duration-400'>Tags</Link>
+            <Link href='/tags' className='nav-menu-title hover:text-slate-400 transition-all duration-400'>Tags</Link>
                 {/* <MenuTitle title='Readers' page='/readers'>
                     <div className='nav-menu-option-wrapper'>
                         <MenuOption page='/readers#integrated-readers' icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
@@ -42,7 +42,7 @@ const NavBar = () => {
                 </MenuTitle> */}
                 {/* <MenuTitle title='Software' page='/software'>Offerings</MenuTitle> */}
                 {/* <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle> */}
-                <Link href='/contactus' className='hover:text-slate-400 transition-all duration-400 inline sm:hidden'>Contact Us</Link>
+                <Link href='/contactus' className='hover:text-slate-400 text-[18px] font-semibold transition-all duration-400 inline md:hidden'>Contact Us</Link>
             </nav>
             <GradientButton text='Contact Us' page='/contactus'/>
         </header>
