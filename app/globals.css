@@ -357,18 +357,18 @@ section {
     @apply grid grid-cols-2 gap-x-8 gap-y-4
   }
   .contact-input-wrapper {
-    @apply border
+    @apply border-none grid-flow-col
   }
   .contact-input-wrapper label{
-    @apply block
+    @apply visible
   }
   .contact-input-wrapper svg{
-    @apply hidden
+    @apply visible
   }
   .contact-input {
     @apply w-full p-4 rounded-2xl
     text-lg font-semibold tracking-wide
-    bg-gradient-to-r from-gray-700 via-gray-900 to-gray-700 outline-0 border-none
+    bg-gray-950 outline-0 border
   }
 
   /* Footer */
@@ -408,7 +408,7 @@ input:-webkit-autofill:active{
 }
 
 input:-webkit-autofill{
-  -webkit-text-fill-color: lightblue !important;
+  -webkit-text-fill-color: #94a3b8 !important;
 }
 
 .nav-dropdown::before,
