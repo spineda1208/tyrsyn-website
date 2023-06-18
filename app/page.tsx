@@ -67,7 +67,21 @@ export default function HomePage() {
       <div className='container'>
         <div className='even-columns h-96'>
           <div className='home-text-wrapper'>
-            <div className='home-text-pre text-purple'> Lorem, ipsum dolor.</div>
+            <div className='home-text-pre text-purple'> Streamline your operations</div>
+            <h3 className='home-text-header'>Lorem ipsum dolor sit amet consectetur.</h3>
+            <p className='home-text-subtext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit deleniti aut!</p>
+          </div>
+          <div className='home-showcase-blue'>
+          <img src="logos/tyrsyn-white.svg" alt=""/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div className='container'>
+        <div className='even-columns h-96'>
+          <div className='home-text-wrapper'>
+            <div className='home-text-pre text-blue-700'> Streamline your operations</div>
             <h3 className='home-text-header'>Lorem ipsum dolor sit amet consectetur.</h3>
             <p className='home-text-subtext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit deleniti aut!</p>
           </div>
