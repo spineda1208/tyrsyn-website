@@ -46,7 +46,7 @@ export default function ContactPage() {
                 <label>Message</label>
                 <MdInbox/>
               </div>
-              <button className='contact-button'>Submit</button>
+              <button className='hero-button'>Submit</button>
             </form>
           </div>
         </div>
