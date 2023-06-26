@@ -1,14 +1,37 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import {MdInbox, MdMail, MdPhone, MdAccountCircle} from 'react-icons/md'
 
 export default function ContactPage() {
-  const [sumn, setSumn] = useState('');  
-  console.log(sumn)
 
-  function handleSubmit() {
-    return 1;
+  type FormData = {
+    firstName: string,
+    lastName: string,
+    email: string,
+    phone: string,
+    message: string
+  }
+
+  const INITIAL_DATA: FormData = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: ""
+  }
+
+  const [data, setData] = useState(INITIAL_DATA);
+
+  function updateData(data: Partial<FormData>) {
+    setData(prev => {
+      return {...prev, ...data}
+    })
+  };
+
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault()
+    console.log(data)
   }
 
   return (
@@ -22,31 +45,31 @@ export default function ContactPage() {
             </div>
             <form onSubmit={handleSubmit} action="" method="post" className="contact-form">
               <div className="contact-input-wrapper">
-                <input className="contact-input" autoComplete="given-name" name="First Name" type="text" required/>
+                <input value={data.firstName} className="contact-input" autoComplete="given-name" name="First Name" type="text" autoFocus required onChange={e => updateData({firstName :e.target.value})}/>
                 <label>First Name</label>
                 <MdAccountCircle/>
               </div>
               <div className="contact-input-wrapper">
-                <input className="contact-input" autoComplete="family-name" name="Last Name" type="text" required/>
+                <input value={data.lastName} className="contact-input" autoComplete="family-name" name="Last Name" type="text" required onChange={e => updateData({lastName :e.target.value})}/>
                 <label>Last Name</label>
                 <MdAccountCircle/>
               </div>
               <div className="contact-input-wrapper">
-                <input className="contact-input" autoComplete="email" name="Email" type="text" required/>
+                <input value={data.email} className="contact-input" autoComplete="email" name="Email" type="text" required onChange={e => updateData({email :e.target.value})}/>
                 <label>Email</label>
                 <MdMail/>
               </div>
               <div className="contact-input-wrapper">
-                <input className="contact-input" autoComplete="tel-national" name="Phone" type="text" required/>
+                <input value={data.phone} className="contact-input" autoComplete="tel-national" name="Phone" type="text" required onChange={e => updateData({phone :e.target.value})}/>
                 <label>Phone</label>
                 <MdPhone/>
               </div>
               <div className="contact-input-wrapper-full large">
-                <textarea name="Message" autoComplete="off" id="" cols={30} rows={10} className="contact-input" required></textarea>
+                <textarea value={data.message} name="Message" autoComplete="off" id="" cols={30} rows={10} className="contact-input" required onChange={e => updateData({message :e.target.value})}></textarea>
                 <label>Message</label>
                 <MdInbox/>
               </div>
-              <button className='hero-button'>Submit</button>
+              <button type='submit' className='hero-button'>Submit</button>
             </form>
           </div>
         </div>
