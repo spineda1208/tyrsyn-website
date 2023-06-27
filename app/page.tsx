@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -38,9 +39,9 @@ export default function HomePage() {
       <div className='container'>
         <div className='even-columns h-96'>
           <div className='home-text-wrapper'>
-            <div className='home-text-pre text-purple'> Streamline your operations</div>
-            <h3 className='home-text-header'>Seamless and accurate tracking.</h3>
-            <p className='home-text-subtext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit deleniti aut!</p>
+            <div className='home-text-pre text-purple'></div>
+            <h3 className='home-text-header'>Enhancing Efficiency,<br/> Visibility,<br/> & Productivity</h3>
+            <p className='home-text-subtext'>Our solutions for tracking inventory & assets throughout your business allow you a greater scope of visibility allowing for better control and development of business processes.</p>
           </div>
           <div className='home-showcase-blue'>
           <img src="logos/tyrsyn-white.svg" alt=""/>
@@ -52,12 +53,12 @@ export default function HomePage() {
       <div className='container'>
         <div className='even-columns h-96'>
           <div className='home-text-wrapper'>
-            <div className='home-text-pre text-blue-700'> Streamline your operations</div>
-            <h3 className='home-text-header'>Lorem ipsum dolor sit amet consectetur.</h3>
-            <p className='home-text-subtext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit deleniti aut!</p>
+            <div className='home-text-pre text-blue-700'></div>
+            <h3 className='home-text-header'>Optimize Operations</h3>
+            <p className='home-text-subtext'>Automate manual tasks, reducing errors and improving your overall efficiency. We equip businesses with the tools to stay ahead of the competition.</p>
           </div>
           <div className='home-showcase-blue'>
-          <img src="logos/tyrsyn-white.svg" alt=""/>
+          <Image src="logos/tyrsyn-white.svg" width="500" height="500" alt=""/>
           </div>
         </div>
       </div>

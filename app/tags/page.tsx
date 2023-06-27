@@ -19,7 +19,7 @@ export default function TagsPage() {
 
       <section>
         <div className="container pt-4">
-          <ul className="grid grid-flow-cols grid-cols-4 gap-8">
+          <ul className="grid grid-flow-cols sm:grid-cols-4 gap-8">
 
             <li className="product-wrapper flex-col mx-0">
               <h4 className="product-title text-center py-4">Active UHF Tags</h4>

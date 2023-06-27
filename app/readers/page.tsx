@@ -7,9 +7,9 @@ export default function ReadersPage() {
       <section>
         <div className="container flex flex-col">
           <h1 className="page-header-underlined">RFID Readers</h1>
-          <div className="even-columns mx-40">
+          <div className="even-columns mx-8 sm:mx-40">
             <div className="flex justify-center items-center">
-              <p className="max-w-xl text-justify tracking-wide text-base">An RFID reader is a device that uses radio waves to read data from an RFID tag. RFID tags are small, electronic devices that contain a unique identifier. When an RFID reader is turned on, it emits a radio wave. If an RFID tag is within range of the reader it will receive the signal and respond by sending back its unique identifier. The reader will then decode the identifier and send it to a computer or other device for processing. RFID readers are used in a variety of applications, including inventory management, asset tracking, and access control.</p>
+              <p className="sm:max-w-xl text-justify tracking-wide text-base">An RFID reader is a device that uses radio waves to read data from an RFID tag. RFID tags are small, electronic devices that contain a unique identifier. When an RFID reader is turned on, it emits a radio wave. If an RFID tag is within range of the reader it will receive the signal and respond by sending back its unique identifier. The reader will then decode the identifier and send it to a computer or other device for processing. RFID readers are used in a variety of applications, including inventory management, asset tracking, and access control.</p>
             </div>
             <div className="flex justify-center ">
               <Image src='icons/handheld.svg' width='300' height='300' alt="" className="justify-center"/>
@@ -23,16 +23,6 @@ export default function ReadersPage() {
           <ul className="flex flex-col gap-8">
 
             <li className="product-wrapper">
-              <Image src='/images/readers/idt-87.png' width='500' height='500' alt=""/>
-              <div className="flex flex-col p-8 border-l-2 border-white">
-                <h4 className="product-title">Integrated Reader</h4>
-                <h5 className="product-price">IDT 87</h5>
-                <hr className="my-4"/>
-                <p className="product-description">Capture real-time data, automate inventory management, enhance access control, and deliver personalized user experiences. Effortlessly track inventory, streamline the supply chain, grant secure access all seamlessley integrated and easy to use.</p>
-              </div>
-            </li>
-
-            <li className="product-wrapper">
               <Image src='/images/readers/idt-85.png' width='500' height='500' alt=""/>
               <div className="flex flex-col p-8 border-l-2 border-white">
                 <h4 className="product-title">Mid Range UHF Integrated Reader</h4>
@@ -43,12 +33,22 @@ export default function ReadersPage() {
             </li>
 
             <li className="product-wrapper">
-              <Image src='/images/readers/idt-85.png' width='500' height='500' alt=""/>
+              <Image src='/images/readers/idt-87.png' width='500' height='500' alt=""/>
+              <div className="flex flex-col p-8 border-l-2 border-white">
+                <h4 className="product-title">Integrated Reader</h4>
+                <h5 className="product-price">IDT 87</h5>
+                <hr className="my-4"/>
+                <p className="product-description">Capture real-time data, automate inventory management, enhance access control, and deliver personalized user experiences. Effortlessly track inventory, streamline the supply chain, grant secure access all seamlessley integrated and easy to use.</p>
+              </div>
+            </li>
+
+            <li className="product-wrapper">
+              <Image src='/images/readers/idt-88.png' width='500' height='500' alt=""/>
               <div className="flex flex-col p-8 border-l-2 border-white">
                 <h4 className="product-title">Long Range UHF Integrated Reader</h4>
                 <h5 className="product-price">IDT 88</h5>
                 <hr className="my-4"/>
-                <p className="product-description">Even better performance for tougher requirements. The IDT 88 can be used with more flexibility in many RFID application systems from logistics and access control to counterfeit prevenetion and industrial production controls.</p>
+                <p className="product-description">IDT 88 is a high performance UHF RFID integrated reader. It is designed upon fully self-intellectual property. Based on proprietary efficient digital signal processing algorithm, it supports fast tag read/write operation with high identification rate. It can be widely applied in many RFID application systems such as logistics, access control, and anti-counterfeit and industrial production process control system.</p>
               </div>
             </li>
 
