@@ -25,7 +25,7 @@ export default function HomePage() {
               <span className='hero-text-gradient animate-hero-eff-gradient'>Efficency.</span>
             </span>
           </h1>
-          <div className='px-2 max-w-xs sm:max-w-md font-thin sm:font-medium sm:tracking-wider'>We provide state of the art solutions for inventory and asset management with an ecosystem of RFID devices and software.</div>
+          <div className='mb-2 px-2 max-w-xs sm:max-w-md font-thin sm:font-medium sm:tracking-wider'>We provide state of the art solutions for inventory and asset management with an ecosystem of RFID devices and software.</div>
           <div className='flex flex-row gap-4'>
             <Link href='/contactus' className='hero-button'>Contact Us</Link>
             <Link href='#aboutus' className='hidden sm:hero-button'>About Us</Link>
@@ -37,25 +37,25 @@ export default function HomePage() {
 
     <section>
       <div className='container'>
-        <div className='even-columns h-96'>
+        <div className='even-columns'>
           <div className='home-text-wrapper'>
-            <div className='home-text-pre text-purple'></div>
+            <div className='home-text-pre text-orange'></div>
             <h3 className='home-text-header'>Enhancing Efficiency,<br/> Visibility,<br/> & Productivity</h3>
             <p className='home-text-subtext'>Our solutions for tracking inventory & assets throughout your business allow you a greater scope of visibility allowing for better control and development of business processes.</p>
           </div>
           <div className='home-showcase-blue'>
-          <img src="logos/tyrsyn-white.svg" alt=""/>
+          <Image src="logos/tyrsyn-white.svg" width="500" height="500" alt=""/>
           </div>
         </div>
       </div>
     </section>
     <section>
       <div className='container'>
-        <div className='even-columns h-96'>
+        <div className='even-columns'>
           <div className='home-text-wrapper'>
-            <div className='home-text-pre text-blue-700'></div>
-            <h3 className='home-text-header'>Optimize Operations</h3>
-            <p className='home-text-subtext'>Automate manual tasks, reducing errors and improving your overall efficiency. We equip businesses with the tools to stay ahead of the competition.</p>
+            <div className='home-text-pre text-orange'></div>
+            <h3 className='home-text-header-2'>Streamline Processes, Optimize Operations</h3>
+            <p className='home-text-subtext'>Automate manual tasks, reducing errors and improving your overall performance. We equip businesses with the tools to stay ahead of the competition.</p>
           </div>
           <div className='home-showcase-blue'>
           <Image src="logos/tyrsyn-white.svg" width="500" height="500" alt=""/>
@@ -66,14 +66,14 @@ export default function HomePage() {
 
     <section>
       <div className='container'>
-        <div className='even-columns h-96'>
+        <div className='even-columns'>
           <div className='home-text-wrapper'>
-            <div className='home-text-pre text-orange'> Lorem, ipsum dolor.</div>
-            <h3 className='home-text-header'>Lorem ipsum dolor sit amet consectetur.</h3>
-            <p className='home-text-subtext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit deleniti aut!</p>
+            <div className='home-text-pre text-orange'></div>
+            <h3 className='home-text-header-2'>Tailored Solutions</h3>
+            <p className='home-text-subtext'>We offer tailored RFID solutions designed to meet the specific needs of industries such as logistics, retail, manufacturing, and more.</p>
           </div>
           <div className='home-showcase-orange'>
-          <img src="logos/tyrsyn-black.svg" alt=""/>
+          <Image src="/icons/specialty.svg" width="500" height="500" alt=""/>
           </div>
         </div>
       </div>

@@ -300,13 +300,13 @@ section {
   .home-showcase-blue {
     @apply flex
     text-center justify-center items-center
-    bg-gradient-radial from-purple from-10% to-black to-55%
+    bg-gradient-radial from-purple from-10% to-black to-70%
     bg-cover bg-no-repeat 
   }
   .home-showcase-orange {
     @apply flex
     text-center justify-center items-center
-    bg-gradient-radial from-orange from-10% to-black to-55%
+    bg-gradient-radial from-orange from-10% to-black to-70%
     bg-cover bg-no-repeat 
   }
   .home-text-wrapper {
@@ -317,7 +317,10 @@ section {
     @apply text-lg font-black tracking-tight
   }
   .home-text-header {
-    @apply text-6xl font-bold tracking-wider  max-w-xl
+    @apply text-6xl font-black tracking-wider  max-w-xl
+  }
+  .home-text-header-2 {
+    @apply text-5xl font-black tracking-wider  max-w-xl
   }
   .home-text-subtext {
     @apply text-lg font-medium max-w-md
