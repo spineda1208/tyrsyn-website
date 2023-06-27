@@ -15,6 +15,13 @@ const NavBar = () => {
             navRef.current.toggleAttribute('data-visible')
         };
     };
+    const navToggleOff = () => {
+        // navRef.current.hasAttribute('data-visible') ? navToggle.setAttribute('aria-expanded'. true) : console.log('false')
+        if (navRef.current) {
+            navRef.current.toggleAttribute('data-visible', false)
+        };
+    };
+
 
     return (
         <header className='navbar'>
@@ -24,8 +31,8 @@ const NavBar = () => {
                 <span className='visually-hidden'>Menu</span>
             </button>
             <nav className='navbar-titles' id='navbar-titles' aria-label='Primary' ref={navRef}>
-            <Link href='/readers' className='nav-menu-title hover:text-slate-400 transition-all duration-400'>Readers</Link>
-            <Link href='/tags' className='nav-menu-title hover:text-slate-400 transition-all duration-400'>Tags</Link>
+            <Link href='/readers' className='nav-menu-title hover:text-slate-400 transition-all duration-400' onClick={navToggleOff}>Readers</Link>
+            <Link href='/tags' className='nav-menu-title hover:text-slate-400 transition-all duration-400' onClick={navToggleOff}>Tags</Link>
                 {/* <MenuTitle title='Readers' page='/readers'>
                     <div className='nav-menu-option-wrapper'>
                         <MenuOption page='/readers#integrated-readers' icon={<img src="icons/reader-antenna.svg" alt="integrated RFID antenna reader icon" className='large-icon'/>}>Integrated</MenuOption>
@@ -42,7 +49,7 @@ const NavBar = () => {
                 </MenuTitle> */}
                 {/* <MenuTitle title='Software' page='/software'>Offerings</MenuTitle> */}
                 {/* <MenuTitle title='Solutions' page='/solutions'>Placeholder</MenuTitle> */}
-                <Link href='/contactus' className='hover:text-slate-400 text-[18px] font-semibold transition-all duration-400 inline md:hidden'>Contact Us</Link>
+                <Link href='/contactus' className='hover:text-slate-400 text-[18px] font-semibold transition-all duration-400 inline md:hidden' onClick={navToggleOff}>Contact Us</Link>
             </nav>
             <GradientButton text='Contact Us' page='/contactus'/>
         </header>
