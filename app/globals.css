@@ -153,8 +153,8 @@ section {
     z-10
   }
   .navbar-titles[data-visible] {
-    @apply absolute flex flex-col text-center
-    top-28 bottom-20 left-0 gap-8 p-4 mx-8 h-60 min-h-[0]
+    @apply absolute flex flex-col text-center justify-center
+    top-24 bottom-20 left-0 gap-8 p-4 mx-8 h-60 min-h-[0]
     bg-slate-950 rounded-lg border-white border-x-2 border-y-2
   }
   .nav-toggle {
@@ -241,7 +241,7 @@ section {
   }
 
 
-  /* Hero & Homepage */
+  /* Hero */
 
   .hero-header {
     @apply font-black text-4xl sm:text-8xl text-left select-none cursor-default
@@ -271,6 +271,9 @@ section {
   .nav-gradientbutton:hover {
     @apply bg-350%
   }
+
+
+  /* Home */
 
   .home-card {
     @apply relative
@@ -387,6 +390,10 @@ section {
     text-lg font-semibold tracking-wide
     bg-gray-950 outline-0 border
     focus:bg-gray-900 transition-all duration-300
+  }
+
+  .contact-input:focus {
+    @apply text-green-600
   }
 
   /* Footer */

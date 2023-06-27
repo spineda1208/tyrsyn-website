@@ -28,7 +28,27 @@ export default function ReadersPage() {
                 <h4 className="product-title">Integrated Reader</h4>
                 <h5 className="product-price">IDT 87</h5>
                 <hr className="my-4"/>
-                <p className="product-description">ID Tech Solutions Provides a comprehensive range of RFID tags and Readers for a variety of industries. We have an excellent working knowledge of LF( Low Frequency ) , HF( High Frequency ) and UHF( Ultra High Frequency) Our team is well equipped to design RFID management software to work seamlessly in the most demanding environment. We have deployed our solutions in a range of highly specialized vertical markets that include Coal Mines, Toll Roads, Airports, Hotels, Railway Stations, libraries, Hospitals, Textile Manufacturing, Automotive, Fashion, Apparel, Hospitality and others.</p>
+                <p className="product-description">Capture real-time data, automate inventory management, enhance access control, and deliver personalized user experiences. Effortlessly track inventory, streamline the supply chain, grant secure access all seamlessley integrated and easy to use.</p>
+              </div>
+            </li>
+
+            <li className="product-wrapper">
+              <Image src='/images/readers/idt-85.png' width='500' height='500' alt=""/>
+              <div className="flex flex-col p-8 border-l-2 border-white">
+                <h4 className="product-title">Mid Range UHF Integrated Reader</h4>
+                <h5 className="product-price">IDT 85</h5>
+                <hr className="my-4"/>
+                <p className="product-description">Higher performance, and longer range. This reader supports faster tag read/write operations with better identification capabilites at a longer range.</p>
+              </div>
+            </li>
+
+            <li className="product-wrapper">
+              <Image src='/images/readers/idt-85.png' width='500' height='500' alt=""/>
+              <div className="flex flex-col p-8 border-l-2 border-white">
+                <h4 className="product-title">Long Range UHF Integrated Reader</h4>
+                <h5 className="product-price">IDT 88</h5>
+                <hr className="my-4"/>
+                <p className="product-description">Even better performance for tougher requirements. The IDT 88 can be used with more flexibility in many RFID application systems from logistics and access control to counterfeit prevenetion and industrial production controls.</p>
               </div>
             </li>
 
@@ -42,35 +62,13 @@ export default function ReadersPage() {
               </div>
             </li>
 
-
-            <li className="product-wrapper">
-              <Image src='/images/readers/idt-85.png' width='500' height='500' alt=""/>
-              <div className="flex flex-col p-8 border-l-2 border-white">
-                <h4 className="product-title">Mid Range UHF Integrated Reader</h4>
-                <h5 className="product-price">IDT 85</h5>
-                <hr className="my-4"/>
-                <p className="product-description">IDT 85 is a high performance UHF RFID integrated reader. It is designed upon fully self-intellectual property. Based on proprietary efficient digital signal processing algorithm, it supports fast tag read/write operation with high identification.</p>
-              </div>
-            </li>
-
-            <li className="product-wrapper">
-              <Image src='/images/readers/idt-85.png' width='500' height='500' alt=""/>
-              <div className="flex flex-col p-8 border-l-2 border-white">
-                <h4 className="product-title">Long Range UHF Integrated Reader</h4>
-                <h5 className="product-price">IDT 88</h5>
-                <hr className="my-4"/>
-                <p className="product-description">IDT 88 is a high performance UHF RFID integrated reader. It is designed upon fully self-intellectual property. Based on proprietary efficient digital signal processing algorithm, it supports fast tag read/write operation with high identification rate. It can be widely applied in many RFID application systems such as logistics, access control, and anti-counterfeit and industrial production process control system.</p>
-              </div>
-            </li>
-
-
             <li className="product-wrapper">
               <Image src='/images/readers/idt-527.png' width='500' height='500' alt=""/>
               <div className="flex flex-col p-8 border-l-2 border-white">
                 <h4 className="product-title">Active Omni Directional Reader</h4>
                 <h5 className="product-price">IDT 527</h5>
                 <hr className="my-4"/>
-                <p className="product-description">Active RFID reader IDT 527 can connect to various omni-directional antennas, with high identification and reliability, strong expand ability, etc. The read range is adjustable within 0~100 meter.</p>
+                <p className="product-description">Active RFID reader IDT 527 can connect to various omni-directional antennas while remaining consistent and reliabe,. This provides expandability and flexibility with an adjustable range from 0-100 meters.</p>
               </div>
             </li>
 
@@ -80,7 +78,7 @@ export default function ReadersPage() {
                 <h4 className="product-title">RFID HF Gate Readers</h4>
                 <h5 className="product-price"></h5>
                 <hr className="my-4"/>
-                <p className="product-description">ID Tech Solutions provides a comprehensive range of UHF readers which can be used for HF RFID Gates readers, which is an advanced management system for Automatic Time Attendance for Schools, Personnel Tracking in Manufacturing Plants, Library Security, Access Control.</p>
+                <p className="product-description">Our advanced HF RFID Gate readers serve as a powerful management system for a multitude of applications, including Automatic Time Attendance for Schools, Personnel Tracking in Manufacturing Plants, Library Security, and Access Control. With our cutting-edge UHF readers, you can effortlessly manage and monitor various operations, ensuring seamless efficiency, enhanced security, and streamlined processes</p>
               </div>
             </li>
 
@@ -90,7 +88,7 @@ export default function ReadersPage() {
                 <h4 className="product-title">UHF Gate Readers</h4>
                 <h5 className="product-price"></h5>
                 <hr className="my-4"/>
-                <p className="product-description">ID Tech Solutions provides a comprehensive range of UHF readers which can be used for HF RFID Gates readers, which is an advanced management system for Automatic Time Attendance for Schools, Personnel Tracking in Manufacturing Plants, Library Security, Access Control.</p>
+                <p className="product-description">These advanced readers offer unparalleled performance and versatility. The UHF RFID Gate readers provide comprehensive management and detection for an even wider array of applications and solutions.</p>
               </div>
             </li>
 
