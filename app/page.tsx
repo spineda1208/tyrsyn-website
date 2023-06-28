@@ -44,7 +44,7 @@ export default function HomePage() {
             <p className='home-text-subtext'>Our solutions for tracking inventory & assets throughout your business allow you a greater scope of visibility allowing for better control and development of business processes.</p>
           </div>
           <div className='home-showcase-blue'>
-          <Image src="logos/tyrsyn-white.svg" width="500" height="500" alt=""/>
+          <Image src="icons/eye.svg" width="500" height="500" alt=""/>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function HomePage() {
             <h3 className='home-text-header-2'>Streamline Processes, Optimize Operations</h3>
             <p className='home-text-subtext'>Automate manual tasks, reducing errors and improving your overall performance. We equip businesses with the tools to stay ahead of the competition.</p>
           </div>
-          <div className='home-showcase-blue'>
+          <div className='home-showcase-orange'>
           <Image src="logos/tyrsyn-white.svg" width="500" height="500" alt=""/>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function HomePage() {
             <h3 className='home-text-header-2'>Tailored Solutions</h3>
             <p className='home-text-subtext'>We offer tailored RFID solutions designed to meet the specific needs of industries such as logistics, retail, manufacturing, and more.</p>
           </div>
-          <div className='home-showcase-orange'>
+          <div className='home-showcase-blue'>
           <Image src="/icons/specialty.svg" width="500" height="500" alt=""/>
           </div>
         </div>
@@ -80,9 +80,9 @@ export default function HomePage() {
     </section>
 
     <section id='aboutus'>
-      <div className='pb-8 container flex flex-col'>
+      <div className='pb-8 container flex flex-col gap-16'>
           <h2 className='page-header'>About Us</h2>
-          <ul className='flex flex-col md:flex-row gap-16'>
+          <ul className='flex flex-col md:flex-row gap-16 mb-16'>
             <li className='home-card'>
               <h3 className='home-card-title'>Vision</h3>
               <p>Our vision is to be a leader in RFID solutions, driving the adoption and advancement of RFID technology worldwide. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
@@ -92,6 +92,26 @@ export default function HomePage() {
               <p>To provide innovative and reliable RFID solutions that enhance efficiency, visibility, and productivity for our clients across various industries. We strive to be a trusted partner in their digital transformation journey, enabling them to optimize operations, improve asset tracking, and streamline processes through cutting-edge RFID technology.</p>
             </li>
           </ul>
+          <div className="even-columns h-full">
+            <div className='flex flex-col justify-center items-center gap-8'>
+              <Image src="logos/idtech/id-tech.svg" width="480" height="250" alt=""/>
+              <Image src="graphics/graphic-1.svg" width="500" height="500" alt=""/>
+            </div>
+            <div className='flex flex-col gap-4'>
+              <h1 className="about-header">
+                <span data-content='Innovative.' className='about-text-white before:animate-about-id-white'>
+                  <span className='about-text-gradient animate-about-id-gradient'>Innovative.</span>
+                </span>
+                <span data-content='Reliable.' className='about-text-white before:animate-about-track-white'>
+                  <span className='about-text-gradient animate-about-track-gradient'>Reliable.</span>
+                </span>
+                <span data-content='Customizable.' className='about-text-white before:animate-about-eff-white'>
+                  <span className='about-text-gradient animate-about-eff-gradient'>Customizable.</span>
+                </span>
+              </h1>
+              <div className='mb-2 px-2 max-w-xs sm:max-w-md font-thin sm:font-medium sm:tracking-wider'>We provide state of the art solutions for inventory and asset management with an ecosystem of RFID devices and software.</div>
+              </div>
+            </div>
           {/* <div className='home-card bg-transparent mt-16 justify-center'>
             <h3 className='home-card-title mb-2'>Values</h3>
             <div className='sm:hidden content-[""] mx-auto w-20 h-1 sm:w-32 sm:h-2 rounded-xl bg-black mb-4'></div>

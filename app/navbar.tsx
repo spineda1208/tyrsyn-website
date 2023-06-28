@@ -15,6 +15,7 @@ const NavBar = () => {
             navRef.current.toggleAttribute('data-visible')
         };
     };
+    
     const navToggleOff = () => {
         // navRef.current.hasAttribute('data-visible') ? navToggle.setAttribute('aria-expanded'. true) : console.log('false')
         if (navRef.current) {

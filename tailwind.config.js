@@ -118,6 +118,15 @@ module.exports = {
 
           'hero-eff-gradient': 'hero-eff-gradient 10s infinite',
           'hero-eff-white': 'hero-eff-white 10s infinite',
+
+          'about-id-gradient': 'hero-id-gradient 10s infinite',
+          'about-id-white': 'hero-id-white 10s infinite',
+
+          'about-track-gradient': 'hero-track-gradient 10s infinite',
+          'hero-track-white': 'hero-track-white 10s infinite',
+
+          'about-eff-gradient': 'hero-eff-gradient 10s infinite',
+          'about-eff-white': 'hero-eff-white 10s infinite',
         },
         
         colors: {
