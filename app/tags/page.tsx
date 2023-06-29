@@ -5,7 +5,7 @@ export default function TagsPage() {
       <>
         <section>
         <div className="container flex flex-col">
-          <h1 className="page-header-underlined">RFID Tags</h1>
+          <h1 className="page-header-underlined before:w-56">RFID Tags</h1>
           <div className="even-columns">
             <div className="flex justify-center items-center">
               <p className="max-w-xl text-justify tracking-wide text-base">RFID tags are small electronic devices that consist of a microchip and an antenna. These tags are capable of wirelessly storing and transmitting data when in proximity to an RFID reader. The microchip contains unique identification information allowing for quick and automated identification, tracking, and monitoring of objects or individuals. This technology has widespread applications in various industries, enabling improved inventory management, access control, asset tracking, and more.</p>
