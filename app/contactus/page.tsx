@@ -33,7 +33,18 @@ export default function ContactPage() {
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
-    console.log(data) //Connect to API here
+    // console.log(data) //Connect to API here
+    //   Email.send({
+    //     Host : "smtp.gmail.com",
+    //     Username : "santi45yolotastic@gmail.com",
+    //     Password : "Million1jaykai",
+    //     To : 'spineda1208@gmail.com',
+    //     From : 'santi45yolotastic@gmail.com',
+    //     Subject : "Contact Enquiry",
+    //     Body : "Name" + data.firstName + data.lastName + "<br/> Email:" + data.email + "<br/> Phone:" + data.phone + "<br/> Message:" + data.message,
+    //   }).then(
+    //   message => alert("Thank for reaching out! We will be in contact soon.")
+    // );
   }
 
   const inputRef = useRef<HTMLElement>(null);
@@ -52,10 +63,11 @@ export default function ContactPage() {
           <div className="even-columns">
             <div className="flex flex-col flex-none gap-6">
               <div>
+                <div>{process.env.RESEND_API_KEY}</div>
                 <h1>Let's Get in Touch<span className='text-orange text-6xl sm:text-8xl'>.</span></h1>
                 <div className="text-xl text-slate-400 font-medium tracking-wider">You can also reach as at <a href="mailto:customerservice@tyrsyn.com">customerservice@tyrsyn.com</a></div>
               </div>
-              <form onSubmit={handleSubmit} action="" method="post" className="contact-form">
+              <form action="https://formsubmit.co/customerservice@tyrsyn.com" method="POST" className="contact-form">
                 <div className="contact-input-wrapper">
                   <input value={data.firstName} className="contact-input" autoComplete="given-name" name="First Name" type="text" required onChange={e => updateData({firstName :e.target.value})}/>
                   <label className='group-focus:translate-y-1'>First Name</label>
