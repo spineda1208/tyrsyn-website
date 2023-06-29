@@ -85,7 +85,7 @@ export default function ContactPage() {
               </form>
             </div>
             <div className="flex justify-center items-center">
-              <Image src="icons/forklifter.svg" width="500" height="500" alt=""/>
+              <Image src="graphics/graphic-2.svg" width="1000" height="500" alt="" className='scale-x-[-1]'/>
             </div>
           </div>
         </div>
