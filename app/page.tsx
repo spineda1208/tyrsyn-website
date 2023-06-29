@@ -58,7 +58,7 @@ export default function HomePage() {
             <p className='home-text-subtext'>Automate manual tasks, reducing errors and improving your overall performance. We equip businesses with the tools to stay ahead of the competition.</p>
           </div>
           <div className='home-showcase-orange'>
-          <Image src="logos/tyrsyn-white.svg" width="500" height="500" alt=""/>
+          <Image src="icons/warehousing.svg" width="500" height="500" alt=""/>
           </div>
         </div>
       </div>
@@ -93,11 +93,11 @@ export default function HomePage() {
             </li>
           </ul>
           <div className="even-columns h-full">
-            <div className='flex flex-col justify-center items-center gap-8'>
+            <div className='flex flex-col items-center gap-8'>
               <Image src="logos/idtech/id-tech.svg" width="480" height="250" alt=""/>
               <Image src="graphics/graphic-1.svg" width="500" height="500" alt=""/>
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4 items-center'>
               <h1 className="about-header">
                 <span data-content='Innovative.' className='about-text-white before:animate-about-id-white'>
                   <span className='about-text-gradient animate-about-id-gradient'>Innovative.</span>
@@ -109,9 +109,9 @@ export default function HomePage() {
                   <span className='about-text-gradient animate-about-eff-gradient'>Customizable.</span>
                 </span>
               </h1>
-              <div className='mb-2 px-2 max-w-xs sm:max-w-md font-thin sm:font-medium sm:tracking-wider'>We provide state of the art solutions for inventory and asset management with an ecosystem of RFID devices and software.</div>
-              </div>
+              <div className='text-center max-w-xs sm:max-w-sm font-thin sm:font-medium sm:tracking-wider'>ID Tech Solutions India is a leader in RFID technology solutions with extensive expertise in industry and a wide range of products. They empower businesses across industries and are partenered with us to extend their services.</div>
             </div>
+          </div>
           {/* <div className='home-card bg-transparent mt-16 justify-center'>
             <h3 className='home-card-title mb-2'>Values</h3>
             <div className='sm:hidden content-[""] mx-auto w-20 h-1 sm:w-32 sm:h-2 rounded-xl bg-black mb-4'></div>

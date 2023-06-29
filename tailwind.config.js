@@ -110,6 +110,7 @@ module.exports = {
           'gradient-fast': 'gradient 2s infinite alternate',
           'gradient-faster': 'gradient 1.5s infinite alternate',
 
+
           'hero-id-gradient': 'hero-id-gradient 10s infinite',
           'hero-id-white': 'hero-id-white 10s infinite',
 
@@ -119,14 +120,15 @@ module.exports = {
           'hero-eff-gradient': 'hero-eff-gradient 10s infinite',
           'hero-eff-white': 'hero-eff-white 10s infinite',
 
-          'about-id-gradient': 'hero-id-gradient 10s infinite',
-          'about-id-white': 'hero-id-white 10s infinite',
 
-          'about-track-gradient': 'hero-track-gradient 10s infinite',
-          'hero-track-white': 'hero-track-white 10s infinite',
+          'about-id-gradient': 'hero-id-gradient 8s infinite',
+          'about-id-white': 'hero-id-white 8s infinite',
 
-          'about-eff-gradient': 'hero-eff-gradient 10s infinite',
-          'about-eff-white': 'hero-eff-white 10s infinite',
+          'about-track-gradient': 'hero-track-gradient 8s infinite',
+          'hero-track-white': 'hero-track-white 8s infinite',
+
+          'about-eff-gradient': 'hero-eff-gradient 8s infinite',
+          'about-eff-white': 'hero-eff-white 8s infinite',
         },
         
         colors: {
