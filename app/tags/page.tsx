@@ -32,9 +32,9 @@ export default function TagsPage() {
               <Image src='/images/tags/apperal-tracking-tags.png' width='500' height='500' alt=""/>
             </li>
             <li className="product-wrapper flex-col mx-0">
-              <h4 className="product-title text-center py-4">Bolt Seal Tags</h4>
+              <h4 className="product-title text-center py-4">Wire Seals</h4>
               <hr className=''/>
-              <Image src='/images/tags/bolt-seal.png' width='500' height='500' alt=""/>
+              <Image src='/images/tags/rfid-wire-seals.png' width='500' height='500' alt=""/>
             </li>
             <li className="product-wrapper flex-col mx-0">
               <h4 className="product-title text-center py-4">Soft Tags</h4>
@@ -52,7 +52,7 @@ export default function TagsPage() {
               <Image src='/images/tags/pcb-rfid-tag-manufacturer.png' width='500' height='500' alt=""/>
             </li>
             <li className="product-wrapper flex-col mx-0">
-              <h4 className="product-title text-center py-4">Plasitc Tags</h4>
+              <h4 className="product-title text-center py-4">Plastic Tags</h4>
               <hr className=''/>
               <Image src='/images/tags/plastic-seal-flat.png' width='500' height='500' alt=""/>
             </li>
@@ -96,11 +96,7 @@ export default function TagsPage() {
               <hr className=''/>
               <Image src='/images/tags/rfid-tyre-tags-for-carsbustrucks-vehicle-manufacturer.png' width='500' height='500' alt=""/>
             </li>
-            <li className="product-wrapper flex-col mx-0">
-              <h4 className="product-title text-center py-4">Wire Seals</h4>
-              <hr className=''/>
-              <Image src='/images/tags/rfid-wire-seals.png' width='500' height='500' alt=""/>
-            </li>
+            
           </ul>
         </div>
       </section>

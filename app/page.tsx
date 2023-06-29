@@ -85,7 +85,7 @@ export default function HomePage() {
           <ul className='flex flex-col md:flex-row gap-16 mb-16'>
             <li className='home-card'>
               <h3 className='home-card-title'>Vision</h3>
-              <p>Our vision is to be a leader in RFID solutions, driving the adoption and advancement of RFID technology worldwide. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
+              <p>Our vision is to be a leader in RFID solutions, driving the adoption and advancement of RFID technology in Central America. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
             </li>
             <li className='home-card'>
               <h3 className='home-card-title'>Mission</h3>
