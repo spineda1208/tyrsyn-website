@@ -27,7 +27,7 @@ export default function TagsPage() {
               <Image src='/images/tags/active-uhf-rfid-tags.png' width='500' height='500' alt=""/>
             </li>
             <li className="product-wrapper flex-col mx-0">
-              <h4 className="product-title text-center py-4">Apparal Tags</h4>
+              <h4 className="product-title text-center py-4">Apparel Tags</h4>
               <hr className=''/>
               <Image src='/images/tags/apperal-tracking-tags.png' width='500' height='500' alt=""/>
             </li>
