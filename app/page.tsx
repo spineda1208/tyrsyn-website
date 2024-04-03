@@ -1,115 +1,183 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <>
-    <section className='pt-32 pb-40 back-image content-[""]'>
-    {/* <div className="custom-shape-top">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" className="shape-fill"></path>
-    </svg>
-    </div> */}
-    <div className="container pt-0 h-full">
-      <div className="even-columns h-full">
-        <div className='flex flex-col gap-4'>
-          <h1 className="hero-header">
-            <span data-content='Identification.' className='hero-text-white before:animate-hero-id-white'>
-              <span className='hero-text-gradient animate-hero-id-gradient'>Identification.</span>
-            </span>
-            <span data-content='Tracking.' className='hero-text-white before:animate-hero-track-white'>
-              <span className='hero-text-gradient animate-hero-track-gradient'>Tracking.</span>
-            </span>
-            <span data-content='Efficency.' className='hero-text-white before:animate-hero-eff-white'>
-              <span className='hero-text-gradient animate-hero-eff-gradient'>Efficency.</span>
-            </span>
-          </h1>
-          <div className='mb-2 px-2 max-w-xs sm:max-w-md font-thin sm:font-medium sm:tracking-wider'>We provide state of the art solutions for inventory and asset management with an ecosystem of RFID devices and software.</div>
-          <div className='flex flex-row gap-4'>
-            <Link href='/contactus' className='hero-button'>Contact Us</Link>
-            <Link href='#aboutus' className='hidden sm:hero-button'>About Us</Link>
+      <section className='pt-32 pb-40 back-image content-[""]'>
+        <div className="container pt-0 h-full">
+          <div className="even-columns h-full">
+            <div className="flex flex-col gap-4">
+              <h1 className="hero-header">
+                <span
+                  data-content="Identification."
+                  className="hero-text-white before:animate-hero-id-white"
+                >
+                  <span className="hero-text-gradient animate-hero-id-gradient">
+                    Identification.
+                  </span>
+                </span>
+                <span
+                  data-content="Tracking."
+                  className="hero-text-white before:animate-hero-track-white"
+                >
+                  <span className="hero-text-gradient animate-hero-track-gradient">
+                    Tracking.
+                  </span>
+                </span>
+                <span
+                  data-content="Efficiency."
+                  className="hero-text-white before:animate-hero-eff-white"
+                >
+                  <span className="hero-text-gradient animate-hero-eff-gradient">
+                    Efficiency.
+                  </span>
+                </span>
+              </h1>
+              <div className="mb-2 px-2 max-w-xs sm:max-w-md font-thin sm:font-medium sm:tracking-wider">
+                We provide state of the art solutions for inventory and asset
+                management with an ecosystem of RFID devices and software.
+              </div>
+              <div className="flex flex-row gap-4">
+                <Link href="/contactus" className="hero-button">
+                  Contact Us
+                </Link>
+                <Link href="#aboutus" className="hidden sm:hero-button">
+                  About Us
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    </section>
+      </section>
 
-    <section>
-      <div className='container'>
-        <div className='even-columns'>
-          <div className='home-text-wrapper'>
-            <div className='home-text-pre text-orange'></div>
-            <h3 className='home-text-header'>Enhancing Efficiency,<br/> Visibility,<br/> & Productivity</h3>
-            <p className='home-text-subtext'>Our solutions for tracking inventory & assets throughout your business allow you a greater scope of visibility allowing for better control and development of business processes.</p>
-          </div>
-          <div className='home-showcase-blue'>
-          <Image src="icons/eye.svg" width="500" height="500" alt=""/>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div className='container'>
-        <div className='even-columns'>
-          <div className='home-text-wrapper'>
-            <div className='home-text-pre text-orange'></div>
-            <h3 className='home-text-header-2'>Streamline Processes, Optimize Operations</h3>
-            <p className='home-text-subtext'>Automate manual tasks, reducing errors and improving your overall performance. We equip businesses with the tools to stay ahead of the competition.</p>
-          </div>
-          <div className='home-showcase-orange'>
-          <Image src="icons/warehousing.svg" width="500" height="500" alt=""/>
+      <section>
+        <div className="container">
+          <div className="even-columns">
+            <div className="home-text-wrapper">
+              <div className="home-text-pre text-orange"></div>
+              <h3 className="home-text-header">
+                Enhancing Efficiency,
+                <br /> Visibility,
+                <br /> & Productivity
+              </h3>
+              <p className="home-text-subtext">
+                Our solutions for tracking inventory & assets throughout your
+                business allow you a greater scope of visibility allowing for
+                better control and development of business processes.
+              </p>
+            </div>
+            <div className="home-showcase-blue">
+              <Image src="icons/eye.svg" width="500" height="500" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section>
+        <div className="container">
+          <div className="even-columns">
+            <div className="home-text-wrapper">
+              <div className="home-text-pre text-orange"></div>
+              <h3 className="home-text-header-2">
+                Streamline Processes, Optimize Operations
+              </h3>
+              <p className="home-text-subtext">
+                Automate manual tasks, reducing errors and improving your
+                overall performance. We equip businesses with the tools to stay
+                ahead of the competition.
+              </p>
+            </div>
+            <div className="home-showcase-orange">
+              <Image
+                src="icons/warehousing.svg"
+                width="500"
+                height="500"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section>
-      <div className='container'>
-        <div className='even-columns'>
-          <div className='home-text-wrapper'>
-            <div className='home-text-pre text-orange'></div>
-            <h3 className='home-text-header-2'>Tailored Solutions</h3>
-            <p className='home-text-subtext'>We offer tailored RFID solutions designed to meet the specific needs of industries such as logistics, retail, manufacturing, and more.</p>
-          </div>
-          <div className='home-showcase-blue'>
-          <Image src="/icons/specialty.svg" width="500" height="500" alt=""/>
+      <section>
+        <div className="container">
+          <div className="even-columns">
+            <div className="home-text-wrapper">
+              <div className="home-text-pre text-orange"></div>
+              <h3 className="home-text-header-2">Tailored Solutions</h3>
+              <p className="home-text-subtext">
+                We offer tailored RFID solutions designed to meet the specific
+                needs of industries such as logistics, retail, manufacturing,
+                and more.
+              </p>
+            </div>
+            <div className="home-showcase-blue">
+              <Image
+                src="/icons/specialty.svg"
+                width="500"
+                height="500"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id='aboutus'>
-      <div className='pb-8 container flex flex-col gap-16'>
-          <h2 className='page-header'>About Us</h2>
-          <ul className='flex flex-col md:flex-row gap-16 mb-16'>
-            <li className='home-card'>
-              <h3 className='home-card-title'>Vision</h3>
-              <p>Our vision is to be a leader in RFID solutions, driving the adoption and advancement of RFID technology in Central America. We aim to revolutionize industries by delivering intelligent and scalable RFID solutions that empower businesses to achieve operational excellence, gain real-time insights, and unlock new levels of efficiency and customer satisfaction.</p>
+      <section id="aboutus">
+        <div className="pb-8 container flex flex-col gap-16">
+          <h2 className="page-header">About Us</h2>
+          <ul className="flex flex-col md:flex-row gap-16 mb-16">
+            <li className="home-card">
+              <h3 className="home-card-title">Vision</h3>
+              <p>
+                Our vision is to be a leader in RFID solutions, driving the
+                adoption and advancement of RFID technology in Central America.
+                We aim to revolutionize industries by delivering intelligent and
+                scalable RFID solutions that empower businesses to achieve
+                operational excellence, gain real-time insights, and unlock new
+                levels of efficiency and customer satisfaction.
+              </p>
             </li>
-            <li className='home-card'>
-              <h3 className='home-card-title'>Mission</h3>
-              <p>To provide innovative and reliable RFID solutions that enhance efficiency, visibility, and productivity for our clients across various industries. We strive to be a trusted partner in their digital transformation journey, enabling them to optimize operations, improve asset tracking, and streamline processes through cutting-edge RFID technology.</p>
+            <li className="home-card">
+              <h3 className="home-card-title">Mission</h3>
+              <p>
+                To provide innovative and reliable RFID solutions that enhance
+                efficiency, visibility, and productivity for our clients across
+                various industries. We strive to be a trusted partner in their
+                digital transformation journey, enabling them to optimize
+                operations, improve asset tracking, and streamline processes
+                through cutting-edge RFID technology.
+              </p>
             </li>
           </ul>
           <div className="even-columns h-full">
-            <div className='flex flex-col items-center gap-8'>
-              <Image src="logos/idtech/id-tech.svg" width="480" height="250" alt=""/>
-              <Image src="graphics/graphic-1.svg" width="500" height="500" alt=""/>
+            <div className="flex flex-col items-center gap-8">
+              <Image
+                src="logos/idtech/id-tech.svg"
+                width="480"
+                height="250"
+                alt=""
+              />
+              <Image
+                src="graphics/graphic-1.svg"
+                width="500"
+                height="500"
+                alt=""
+              />
             </div>
-            <div className='flex flex-col gap-4 items-center'>
+            <div className="flex flex-col gap-4 items-center">
               <h1 className="about-header">
-                <span data-content='Innovative.' className='about-text-white before:animate-about-id-white'>
-                  <span className='about-text-gradient animate-about-id-gradient'>Innovative.</span>
-                </span>
-                <span data-content='Reliable.' className='about-text-white before:animate-about-track-white'>
-                  <span className='about-text-gradient animate-about-track-gradient'>Reliable.</span>
-                </span>
-                <span data-content='Customizable.' className='about-text-white before:animate-about-eff-white'>
-                  <span className='about-text-gradient animate-about-eff-gradient'>Customizable.</span>
-                </span>
+                <span className="about-text-gradient">Innovative.</span>
+                <span className="about-text-white">Reliable.</span>
+                <span className="about-text-white">Customizable.</span>
               </h1>
-              <div className='text-center max-w-xs sm:max-w-sm font-thin sm:font-medium sm:tracking-wider'>ID Tech Solutions India is a leader in RFID technology solutions with extensive expertise in industry and a wide range of products. They empower businesses across industries and are partenered with us to extend their services.</div>
+              <div className="text-center max-w-xs sm:max-w-sm font-thin sm:font-medium sm:tracking-wider">
+                ID Tech Solutions India is a leader in RFID technology solutions
+                with extensive expertise in industry and a wide range of
+                products. They empower businesses across industries and are
+                partenered with us to extend their services.
+              </div>
             </div>
           </div>
           {/* <div className='home-card bg-transparent mt-16 justify-center'>
@@ -125,11 +193,11 @@ export default function HomePage() {
               <li><h4>Integrity</h4>We conduct our business with utmost integrity, ethics, and transparency. We adhere to the highest standards of professionalism, respecting the confidentiality and privacy of our clients. We maintain honesty, trustworthiness, and ethical conduct in all our interactions.</li>  
             </ul>
           </div> */}
-      </div>
-    </section>
+        </div>
+      </section>
 
-    {/* <div className='content-[""] w-screen h-4 bg-gradient-to-r from-purple to-red-600'></div> */}
-    {/* <section className='pb-12'>
+      {/* <div className='content-[""] w-screen h-4 bg-gradient-to-r from-purple to-red-600'></div> */}
+      {/* <section className='pb-12'>
       <div className='container flex flex-col gap-8 bg-black rounded-lg p-16 pt-0'>
       <h2 className='font-semibold text-[2.5rem] text-center'>What We Do</h2>
       <div className='even-columns'>
@@ -160,6 +228,5 @@ export default function HomePage() {
       </div>
     </section> */}
     </>
-
-  )
+  );
 }
